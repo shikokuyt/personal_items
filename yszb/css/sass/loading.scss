@@ -1,0 +1,40 @@
+.bg {
+	background: url('../../img/load_bg.jpg') no-repeat;
+	background-size: cover;
+}
+.logo {
+	width: 100%;
+	height: auto;
+	margin-top: 1rem;
+}
+.progress {
+	position: absolute;
+	bottom: 1.49rem;
+	width: 5.76rem;
+	height: .34rem;
+	left: 50%;
+	background: url("../../img/progress.png") center center no-repeat;
+	background-size: cover;
+	font-size: .2133rem;
+	transform: translateX(-50%);
+	p {
+		position: absolute;
+		top: -.25rem;
+		width: 100%;
+		left: 0;
+		text-align: center;
+	}
+	.outer {
+		position: absolute;
+		height: .30rem;
+		width: 5.76rem;
+		box-sizing: border-box;
+		padding: .05rem .255rem .1rem;
+	}
+	.finish {
+		border-radius: 8px/5px;
+		width: 80%;
+		height: 100%;
+		background: linear-gradient(to right, #008aa3, #00f6e8);
+	}
+}

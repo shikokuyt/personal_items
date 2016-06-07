@@ -1,0 +1,46 @@
+@import "ysjx.scss";
+
+.tianxie {
+	width: 5.78rem;
+	height: 4.22rem;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	background: url("../../img/jq_border.png") no-repeat;
+	background-size: cover;
+	text-align: center;
+	top: .72rem;
+	font-size: 0;
+	z-index: 1;
+	.title {
+		font-size: 0;
+		text-align: center;
+		margin-top: .2rem;
+	}	
+	.sx-logo {
+		width: 1.84rem;
+		height: 1.84rem;
+		margin-top: .22rem;
+		margin-bottom: .13rem;
+	}
+	input {
+		display: block;
+		width: 2.82rem;
+		height: .57rem;
+		border-radius: 15px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: .1rem;
+	}
+}
+.tx-form {
+	position: absolute;
+	background: url("../../img/txch.jpg") no-repeat;
+	background-size: cover;
+	height: 3.5rem;
+	width: 5.3rem;
+	top: 1.28rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 0;
+}
