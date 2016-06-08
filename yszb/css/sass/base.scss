@@ -4,7 +4,19 @@
 	margin: 0;
 	padding: 0;
 }
+/*
+ * 清除浏览器样式
+ */
+ul, li {
+	list-style: none;
+}
 
+/*
+ * 滚动条样式, webkit内核
+ */
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, .3);
+} /* 滑动条滑轨背景颜色 */
 
 /*
  * 燕山争霸字体
@@ -88,4 +100,36 @@
 input {
 	outline: none;
 	border: none;
+}
+
+/*
+ * 勾和叉
+ * 错题查看使用
+ */
+i {
+	&.gou {
+		display: inline-block;
+		width: .29rem;
+		height: .24rem;
+		background: url('../../img/gou.png') no-repeat;
+		background-size: cover;
+		line-height: 1;
+		font-size: 0;
+	}
+	&.cha {
+		display: inline-block;
+		width: .29rem;
+		height: .29rem;
+		background: url('../../img/cha.png') no-repeat;
+		background-size: cover;
+		line-height: 1;
+		font-size: 0;
+	}
+}
+
+/*
+ * 触发BFC
+ */
+.BFC {
+	overflow: hidden;
 }

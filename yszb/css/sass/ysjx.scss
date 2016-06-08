@@ -40,7 +40,7 @@
 		}
 	}
 	.question {
-		padding: .14rem .4rem;
+		padding: .14rem .2rem;
 		position: absolute;
 		border: 2px solid #8d1000;
 		font-size: .2133rem;
@@ -50,6 +50,16 @@
 		background-color: #fff1bc;
 		left: 1.7rem;
 		bottom: 3.2rem;
+		span {
+			&.red {
+				color: #ff4534;
+			}
+			&.gray {
+				color: #9a9a98;
+				display: inline-block;
+				margin-top: .1rem;
+			}
+		}
 		i {
 			bottom: -0.28rem;
 			left: 15px;

@@ -1,0 +1,108 @@
+$options: ('A', 'B', 'C');
+.bg {
+	background: url(../../img/cthg_bg.jpg) no-repeat fixed;
+	background-size: cover;
+}
+.cthg {
+	width: 5.96rem;
+	height: 8.83rem;
+	background: url("../../img/cthg.png") no-repeat;
+	background-size: cover;
+	margin: .2rem auto .23rem;
+	position: relative;
+	font-size: 0;
+	.back {
+		position: absolute;
+		right: -.08rem;
+		top: -.08rem;
+		z-index: 500;
+		img {
+			width: .78rem;
+			height: auto;
+		}
+	}
+	.exec {
+		margin-top: .5rem;
+		margin-left: .55rem;
+		margin-right: .55rem;
+		height: 7.9rem;
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #f08213;
+			border-radius: 7px;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: #c6b688;
+			opacity: .3;
+		}
+		li {
+			font-size: .2554rem;
+		}
+		.exec-item {
+			font-size: .3071rem;
+			border-bottom: 2px solid #c4ae72;
+			padding-bottom: .23rem;
+			&:first-child {
+				p {
+					margin-top: .2rem;
+				}
+			}
+			.options {
+				margin-left: .75rem;
+				li {
+					margin-bottom: .27rem;
+					color: #3e0000;
+					padding-left: .73rem;
+					line-height: 1;
+					position: relative;
+					.circ {
+						width: .12rem;
+						height: .12rem;
+						border-radius: 50%;
+						background-color: #fff;
+						position: absolute;
+						left: .06rem;
+						top: .06rem;
+					}
+					i {
+						position: absolute;
+						bottom: 0;
+						margin-left: .15rem;
+					}
+					@for $i from 1 to 4 {
+						&:nth-child(#{$i}) {
+							&::before {
+								position: absolute;
+								left: .40rem;
+								top: 0;
+								content: nth($options, $i);
+								display: inline-block;
+								font-size: .2531rem;
+							}
+						}
+					}
+					&::after {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						width: .2rem;
+						height: .2rem;
+						left: 0;
+						top: 0;
+						border: 2px solid #7d4a35;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+		.title {
+			margin-top: .35rem;
+			margin-bottom: .35rem;
+			font-size: .3074rem;
+			color: #3e0000;
+			font-weight: bold;
+		}
+	}
+}
