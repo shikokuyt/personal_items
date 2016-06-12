@@ -1,0 +1,34 @@
+@import 'tz_base.scss';
+
+.bg {
+	background: url("../../img/tz_bg.jpg") no-repeat;
+	background-size: cover;
+}
+img {
+	border: none;
+	outline: none;
+}
+.logo {
+	width: 4.99rem;
+	height: 4.91rem;
+	display: block;
+	margin: .2rem auto 0;
+}
+
+.finish {
+	margin-bottom: .36rem;
+}
+.get-img {
+	margin-bottom: .9rem;
+	.zlp {
+		figure {
+			flex-direction: row;
+			font-size: .2218rem;
+			img {
+				width: .35rem;
+				height: .42rem;
+				margin-right: .2rem;
+			}
+		}
+	}
+}

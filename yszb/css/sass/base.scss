@@ -49,6 +49,19 @@ ul, li {
 }
 
 /*
+ * 按钮组
+ */
+.btns {
+	height: .51rem;
+	margin: 0 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	.btn {
+		margin: 0;
+	}
+}
+
+/*
  * 按钮
  */
 .btn {
@@ -65,6 +78,40 @@ ul, li {
 	font-family: 'yszb';
 	color: #fff;
 }
+
+/*
+ * 对话框
+ */
+.dhk {
+	border: 4px solid #fff;
+	background-color: #c6d2e0;
+	display: table;
+	padding: .12rem .66rem;
+	border-radius: 8px;
+	position: absolute;
+	/* 箭头 */
+	&::before {
+		content: '';
+		position: absolute;
+		border-width: 15px 6px 0;
+		border-style: solid;
+		transform: rotate(40deg);
+		left: -7px;
+		bottom: -12px;
+		border-color: #fff transparent transparent; 
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		border-width: 9px 3px 0;
+		border-style: solid;
+		transform: rotate(40deg);
+		left: -2px;
+		bottom: -6px;
+		border-color: #c6d2e0 transparent transparent; 
+	}
+}
+
 
 /*
  * 对话框的三角形
@@ -101,6 +148,30 @@ input {
 	outline: none;
 	border: none;
 }
+input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: .2rem;
+	height: .2rem;
+	border: .02rem solid #75412c;
+	background: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 3px;
+	position: relative;
+	font-size: 0;
+}
+input[type="radio"]:checked::after {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	width: .1rem;
+	height: .1rem;
+	border-radius: 50%;
+	left: .03rem;
+	top: .032rem;
+}
+
 
 /*
  * 勾和叉

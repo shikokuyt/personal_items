@@ -1,0 +1,58 @@
+.use-time {
+	font-size: .3498rem;
+	color: #fff;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: .28rem;
+}
+.gou img, .cha img{
+	width: .48rem;
+	height: .51rem;
+}
+
+.finish, .get {
+	font-size: .3583rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	div {
+		display: flex;
+		align-items: center;
+		margin: 0 .15rem;
+		img {
+			margin-right: .15rem;
+		}
+	}
+}
+.get-img {
+	height: 1.8rem;
+	width: 100%;
+	background: url("../../img/get_success.png") no-repeat;
+	background-size: cover;
+	margin-bottom: .38rem;
+	position: relative;
+	.zlp {
+		width: 100%;
+		height: 1.25rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-size: .1708rem;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		figure {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin: 0 .25rem;
+		}
+		img {
+			width: .74rem;
+			height: .75rem;
+			margin-bottom: .02rem;
+		}
+	}
+}

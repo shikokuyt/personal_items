@@ -1,0 +1,30 @@
+@import 'tz_base.scss';
+
+.bg {
+	background: url("../../img/tz_bg.jpg") no-repeat;
+	background-size: cover;
+}
+img {
+	border: none;
+	outline: none;
+}
+.logo {
+	height: 3.95rem;
+	width: auto;
+	display: block;
+	margin: .6rem auto .3rem;
+}
+.money img {
+	width: .35rem;
+	height: .42rem;
+}
+.jy img {
+	width: .41rem;
+	height: .47rem;
+}
+.get {
+	font-size: .2559rem;
+	color: #edc527;
+	margin-top: .28rem;
+	margin-bottom: .2rem;
+}
