@@ -13,11 +13,11 @@ $options: ('A', 'B', 'C');
 	font-size: 0;
 	.back {
 		position: absolute;
-		right: -.08rem;
-		top: -.08rem;
+		right: .1rem;
+		top: 0;
 		z-index: 500;
 		img {
-			width: .78rem;
+			width: .54rem;
 			height: auto;
 		}
 	}
@@ -32,7 +32,7 @@ $options: ('A', 'B', 'C');
 		&::-webkit-scrollbar-thumb {
 			background: url("../../img/scroll_bg.jpg") no-repeat;
 			background-repeat: repeat-y;
-			border-radius: 8px/6px;
+			border-radius: 10px;
 		}
 		&::-webkit-scrollbar {
 			width: 4px;
@@ -40,6 +40,7 @@ $options: ('A', 'B', 'C');
 		&::-webkit-scrollbar-track {
 			background-color: #3c2d14;
 			opacity: .3;
+			border-radius: 10px;
 		}
 		li {
 			font-size: .2554rem;
