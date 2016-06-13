@@ -9,26 +9,26 @@ img {
 	outline: none;
 }
 .logo {
-	width: 4.99rem;
-	height: 4.91rem;
+	width: 3.69rem;
+	height: auto;
 	display: block;
-	margin: .2rem auto 0;
+	margin: .68rem auto 0;
 }
 
 .finish {
 	margin-bottom: .36rem;
 }
-.get-img {
-	margin-bottom: .9rem;
-	.zlp {
-		figure {
-			flex-direction: row;
-			font-size: .2218rem;
-			img {
-				width: .35rem;
-				height: .42rem;
-				margin-right: .2rem;
-			}
-		}
-	}
+.money img {
+	width: .35rem;
+	height: .42rem;
+}
+.jy img {
+	width: .41rem;
+	height: .47rem;
+}
+.get {
+	font-size: .2559rem;
+	color: #edc527;
+	margin-top: .28rem;
+	margin-bottom: 1.5rem;
 }

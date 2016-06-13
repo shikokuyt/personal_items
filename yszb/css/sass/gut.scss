@@ -2,23 +2,14 @@
 	background: url('../../img/jqbg.jpg') no-repeat;
 	background-size: cover;
 }
-.poetry {
-	margin-top: 1.05rem;
-	margin-bottom: .8rem;
-	height: auto;
-	img {
-		width: 50%;
-		height: auto;
-		margin-left: 25%;
-	}
-}
-.vedio {
+.video {
 	width: 5.78rem;
 	height: 4.22rem;
 	position: relative;
 	background: url("../../img/jq_border.png") center center no-repeat;
 	background-size: cover;
 	margin: 0 auto;
+	margin-top: 4.2rem;
 	overflow: hidden;
 	box-sizing: border-box;
 	h2 {
@@ -34,6 +25,7 @@
 		height: 85%;
 		margin-top: 32px;
 		overflow: hidden;
+		// background-color: red;
 	}
 	video {
 		position: relative;
@@ -42,13 +34,16 @@
 		padding-left: 14px;
 		padding-right: 14px;
 		width: 100%;
-		height: auto;
+		height: 100%;
 		top: 0;
 		left: 0;
 	}
 }
 a {
 	text-decoration: none;
-	margin-top: 1.19rem;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	bottom: .43rem;
 	font-size: .2389rem;
 }

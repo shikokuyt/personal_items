@@ -3,38 +3,55 @@
 	background-size: cover;
 }
 .logo {
-	width: 100%;
+	display: block;
+	margin: 0 auto;
+	width: 4.62rem;
 	height: auto;
-	margin-top: 1rem;
+	margin-top: 1.2rem;
 }
 .progress {
 	position: absolute;
-	bottom: 1.49rem;
-	width: 5.76rem;
-	height: .34rem;
-	left: 50%;
+	bottom: 1.32rem;
+	width: 100%;
+	height: 1.22rem;
+	left: 0;
 	background: url("../../img/progress.png") center center no-repeat;
 	background-size: cover;
-	font-size: .2133rem;
-	transform: translateX(-50%);
+	font-size: .2389rem;
+	color: #fff;
 	p {
 		position: absolute;
-		top: -.25rem;
+		top: .22rem;
 		width: 100%;
 		left: 0;
 		text-align: center;
 	}
 	.outer {
 		position: absolute;
-		height: .30rem;
-		width: 5.76rem;
+		height: .355rem;
+		width: 100%;
+		left: 0;
+		bottom: .265rem;
 		box-sizing: border-box;
-		padding: .05rem .255rem .1rem;
+		padding: .05rem .53rem .1rem;
 	}
 	.finish {
 		border-radius: 8px/5px;
-		width: 80%;
+		width: 70%;
 		height: 100%;
 		background: linear-gradient(to right, #008aa3, #00f6e8);
+		position: relative;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 8%;
+			height: 100%;
+			border-top-right-radius: 8px 5px;
+			border-bottom-right-radius: 8px 5px;
+			right: 0;
+			top: 0;
+			background: linear-gradient(to right, #62dfa4, #ffdb00, #ff8a00);
+		}
 	}
 }

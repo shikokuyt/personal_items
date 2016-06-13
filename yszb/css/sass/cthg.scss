@@ -4,8 +4,8 @@ $options: ('A', 'B', 'C');
 	background-size: cover;
 }
 .cthg {
-	width: 5.96rem;
-	height: 8.83rem;
+	width: 5.85rem;
+	height: 8.68rem;
 	background: url("../../img/cthg.png") no-repeat;
 	background-size: cover;
 	margin: .2rem auto .23rem;
@@ -22,19 +22,23 @@ $options: ('A', 'B', 'C');
 		}
 	}
 	.exec {
-		margin-top: .5rem;
+		margin-top: 1.05rem;
 		margin-left: .55rem;
 		margin-right: .55rem;
-		height: 7.9rem;
+		height: 7rem;
 		overflow-y: auto;
 		overflow-x: hidden;
 
 		&::-webkit-scrollbar-thumb {
-			background-color: #f08213;
-			border-radius: 7px;
+			background: url("../../img/scroll_bg.jpg") no-repeat;
+			background-repeat: repeat-y;
+			border-radius: 8px/6px;
+		}
+		&::-webkit-scrollbar {
+			width: 4px;
 		}
 		&::-webkit-scrollbar-track {
-			background-color: #c6b688;
+			background-color: #3c2d14;
 			opacity: .3;
 		}
 		li {
@@ -42,6 +46,7 @@ $options: ('A', 'B', 'C');
 		}
 		.exec-item {
 			font-size: .3071rem;
+			margin-right: .37rem;
 			border-bottom: 2px solid #c4ae72;
 			padding-bottom: .23rem;
 			&:first-child {

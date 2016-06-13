@@ -23,7 +23,7 @@ ul, li {
  */
 @font-face {
 	font-family: 'yszb';
-	src: url('../../font/FZYHJW_0.TTF')  format('truetype');
+	//src: url('../../font/FZYHJW_0.TTF')  format('truetype');
 }
 
 /*
@@ -67,12 +67,12 @@ ul, li {
 .btn {
 	display: block;
 	font-size: .2389rem;
-	width: 1.3rem;
-	line-height: .51rem;
+	width: 1.32rem;
+	line-height: .53rem;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	height: .51rem;
+	height: .53rem;
 	background: url("../../img/btn_bg.png") center center no-repeat;
 	background-size: contain;
 	font-family: 'yszb';
@@ -120,7 +120,7 @@ ul, li {
 	position: absolute;
 	border-color: transparent;
 	border-style: solid;
-	border-top:solid .22rem #8d1000;
+	border-top:solid .22rem #fff;
 	border-left-width: .1rem;
 	border-right-width: .1rem;
 	&::before {
@@ -130,7 +130,7 @@ ul, li {
 		left: -.052rem;
 		border-color: transparent;
 		border-style: solid;
-		border-top:solid .16rem #fff1bc;
+		border-top:solid .16rem #c6d2e0;
 		border-left-width: .06rem;
 		border-right-width: .06rem;
 	}
