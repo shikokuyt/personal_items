@@ -1,12 +1,10 @@
 @charset "utf-8";
 @import 'ysjx.scss';
 
-
-.main .question {
-	font-family: '微软雅黑';
+.question {
+	bottom: 5.05rem;
 	padding: .1rem .05rem .05rem .1rem;
 	line-height: 1.2;
-	color: rgba(85, 20, 0, .8);
 	right: .8rem;
 	left: auto;
 	i {

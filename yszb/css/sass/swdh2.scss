@@ -1,7 +1,15 @@
 @import "ysjx.scss";
 
-.main .question {
-	left: 2.7rem;
-	bottom: 3rem;
-	padding: .1rem .05rem .05rem .1rem;
+.bg {
+	background: url("../../img/swdh.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.question {
+	left: 2.15rem;
+	right: .5rem;
+	bottom: 5rem;
+	padding: .1rem .02rem .05rem .1rem;
+	i {
+		left: 45px;
+	}
 }
