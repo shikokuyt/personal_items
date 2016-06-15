@@ -73,5 +73,36 @@
 
 1. 样式一直需要修改，心好累。 `2016-6-12`
 2. 今天还是该改改 `2016-6-13`
+3. 改成单页面应用 `2016-6-15`
+
+## 更改
+加入模板，把页面组装起来，`SPA`效果
+
+```
+|--- img
+|--- js
+	|--- fitRem.js 				# REM适配
+	|--- jquery-3.0.0.min.js  	# jquery文件
+|--- css
+	|--- dist
+	|--- sass
+		|--- base.scss 			# 公用样式
+		|--- not_buy.scss 		# 未购买样式
+		|--- loading.scss 		# 加载样式
+		|--- gut.scss 			# 剧情介绍样式
+		|--- entrance.scss 		# 师门入门样式
+		|--- challenge.scss 	# 挑战样式
+		|--- allow.html 		# 加入师门样式
+|--- not_buy.html 				# 未购买页面
+|--- loading.html 				# 加载
+|--- gut.html 					# 剧情介绍
+|--- entrance.html 				# 师门入门
+|--- challenge.html 			# 挑战
+|--- allow.html 				# 成功加入师门
+|--- gulpfile.js 				# gulp配置文件
+|--- package.json 				# 包配置文件
+```
+
+
 
 

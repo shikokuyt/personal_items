@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>燕山脚下</title>
+	<link rel="stylesheet" href="css/dist/base.css"> <!-- 基础配置 -->
+	<link rel="stylesheet" href="css/dist/entrance.css"> <!-- 师门入门 -->
+	<script src="js/fitRem.js"></script> <!-- REM 适配 -->
+</head>
+<body>
+	<div class="bg">
+		<!-- 这里加载模块 -->
+	</div>
+	<script id="entrance-tmpl" type="text/html">
+		<!-- 师傅招呼 -->
+		<section id="sfzh">
+		<div class="explain"></div>
+		<div class="question sfzh">
+			请问少侠如何称呼？<br>
+			是为学艺而来吗？
+			<i class="sanjiao"></i>
+		</div>
+		<a href="#txch" class="btn b43">继续</a>
+		</section>
+		<!-- /师傅招呼 -->
+
+		<!-- 填写称呼 -->
+		<section id="txch">
+		<div class="explain"></div>
+		<div class="tianxie">
+			<p class="title">
+				<img src="img/jhch.png" alt="江湖称号">
+			</p>
+			<img src="img/sx_logo.png" class="sx-logo" alt="少侠头像">
+			<div class="form-control">
+				<input type="text" placeholder="如 : 燕南天">
+			</div>
+			<div class="form-control">
+				<a href="#chqd" class="btn b43">确定</a>
+			</div>
+		</div>
+		</section>
+		<!-- /填写称呼 -->
+
+		<!-- 称呼确定 -->
+		<section id="chqd">
+		<div class="explain"></div>
+		<div class="tianxie">
+			<p class="title">
+				<img src="img/hzhd.png" alt="徽章获得">
+			</p>
+			<img src="img/wmyx_logo.png" class="wmyx-logo" alt="无名游侠">
+			<div class="form-control">
+				<a href="#sxhh" class="btn b43">确定</a>
+			</div>
+		</div>
+		</section>
+		<!-- /称呼确定 -->
+
+		<!-- 少侠回话 -->
+		<section id="sxhh">
+		<div class="explain"></div>
+		<div class="question sxhh">
+			弟子燕南天，燕山南庄人士，从小热爱习<br>
+			武，久仰燕山派武功，今诚心愿拜入燕山
+			<br>
+			派习武。
+			<i class="sanjiao"></i>
+		</div>
+		<a href="#rmtj" class="btn b43">继续</a>
+		</section>
+		<!-- /少侠回话 -->
+
+		<!-- 入门条件 -->
+		<section id="rmtj">
+		<div class="question rmtj">
+			燕少侠若拜入我门派，只需<br>
+			挑战并击败我身旁伴童即可。
+			<i class="sanjiao"></i>
+		</div>
+		<a href="#btsh" class="btn b43">继续</a>
+		</section>
+		<!-- /入门条件 -->
+
+		<!-- 伴童说话 -->
+		<section id="btsh">
+		<div class="question btsh">
+			少侠，接下来你只需要击败我，<br>
+			请看招···
+			<i class="sanjiao"></i>
+		</div>
+		<a href="#" class="btn b43">挑战</a>
+		</section>
+		<!-- /伴童说话 -->
+	</script>
+	<!-- 引入jQuery3.0 -->
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script>
+		$(function () {
+			var hash,
+				id,
+				index,
+				href;
+			$('.bg').html($('#entrance-tmpl').html());
+			hash = location.hash;
+			id = hash===''?'#sfzh':hash;
+			$(id).show(600);
+			$('.btn').on('click', function (e) {
+				href = e.target.href;
+				console.log(href);
+				index = href.indexOf('#');
+				if (href.length === index+1) {
+					return ;
+				}
+				hash = href.substr(index);
+				id = hash===''?'#sfzh':hash;
+				$('section').hide();
+				$(hash).show(600);
+			})
+		});
+	</script>
+</body>
+</html>

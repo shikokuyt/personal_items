@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+$options: ('A', 'B', 'C');
+
+.bg {
+	background: url("../../img/challenge.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.ques {
+	width: 5.86rem;
+	height: 8rem;
+	margin: 0 auto;
+	margin-top: .7rem;
+	margin-bottom: .6rem;
+	background: url("../../img/questions.png") no-repeat;
+	background-size: contain;
+	overflow: hidden;
+}
+.watch {
+	/* 看我出招 */
+	font-size: .2133rem;
+	color: #1d2835;
+	left: 2.03rem;
+	top: .5rem;
+}
+.pagination {
+	/* 题目序列 */
+	font-size: .3412rem;
+	color: #000;
+	position: absolute;
+	left: .9rem;
+	top: 2.5rem;
+	width: 1.35rem;
+	text-align: center;
+}
+div.ques-list {
+	/* 题目列表 */
+	font-size: .3071rem;
+	margin-left: .65rem;
+	margin-right: .6rem;
+	color: #3e0000;
+	margin-top: 2.76rem;
+	overflow: hidden;
+	ul {
+		// width: js控制
+		transform: translateX(0);
+		transition: all cubic-bezier(.27,1.04,.75,.99) 1s .1s;
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+	li {
+		width: 4.61rem;
+		float: left;
+	}
+	p {
+		font-weight: bold;
+	}
+	label {
+		font-size: .2554rem;
+		margin-left: .2554rem;
+		line-height: .5rem;
+	}
+	.sel {
+		margin-left: .79rem;
+		margin-top: 1.42rem;
+		overflow: hidden;
+	}
+}
+
+/*
+ * 挑战
+ */
+.use-time {
+	font-size: .3498rem;
+	color: #fff;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: .28rem;
+}
+.gou img, .cha img{
+	width: .48rem;
+	height: .51rem;
+}
+
+.finish, .get {
+	font-size: .3583rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	div {
+		display: flex;
+		align-items: center;
+		margin: 0 .15rem;
+		img {
+			margin-right: .15rem;
+		}
+	}
+}
+.get-img {
+	height: 1.8rem;
+	width: 100%;
+	background: url("../../img/get_success.png") no-repeat;
+	background-size: cover;
+	margin-bottom: .38rem;
+	position: relative;
+	.zlp {
+		width: 100%;
+		height: 1.25rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-size: .1708rem;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		figure {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin: 0 .25rem;
+		}
+		img {
+			width: .74rem;
+			height: .75rem;
+			margin-bottom: .02rem;
+		}
+	}
+}
+
+/*
+ * 挑战成功
+ */
+#success{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url("../../img/challenge_over.png") repeat-x;
+	background-size: 100% 100%;
+	img {
+		border: none;
+		outline: none;
+	}
+	.logo {
+		height: 3.95rem;
+		width: auto;
+		display: block;
+		margin: .6rem auto .3rem;
+	}
+	.money img {
+		width: .35rem;
+		height: .42rem;
+	}
+	.jy img {
+		width: .41rem;
+		height: .47rem;
+	}
+	.get {
+		font-size: .2559rem;
+		color: #edc527;
+		margin-top: .28rem;
+		margin-bottom: .2rem;
+	}
+}
+
+/*
+ * 挑战失败
+ */
+#fail {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url("../../img/challenge_over.png") repeat-x;
+	background-size: 100% 100%;
+	.logo {
+		width: 3.69rem;
+		height: auto;
+		display: block;
+		margin: .68rem auto 0;
+	}
+	.finish {
+		margin-bottom: .36rem;
+	}
+	.money img {
+		width: .35rem;
+		height: .42rem;
+	}
+	.jy img {
+		width: .41rem;
+		height: .47rem;
+	}
+	.get {
+		font-size: .2559rem;
+		color: #edc527;
+		margin-top: .28rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+/*
+ * 升级
+ */
+#upgrade {
+	top: 0;
+	left: 0;
+	position: absolute;
+	padding-top: .72rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 1000;
+	.main {
+	  width: 100%;
+	  height: 4.72rem;
+	  margin-bottom: .5rem;
+	  position: relative;
+	  .upgrade {
+	    position: relative;
+	    background: url("../../img/upgrade_border.png") no-repeat;
+	    width: 5.34rem;
+	    height: 4.97rem;
+	    margin: .2rem auto;
+	    background-size: cover;
+	    text-align: center;
+	    .title {
+	      width: 1.48rem;
+	      height: .48rem;
+	      display: block;
+	      margin: 0 auto;
+	      padding-top: .155rem;
+	    }
+	    .upgrade_img {
+	      width: 2.33rem;
+	      height: 2.51rem;
+	      display: block;
+	      margin: 0 auto;
+	      margin-top: .28rem;
+	    }
+	    p {
+	      margin: .22rem 0 .18rem 0;
+	      font-size: .2133rem;
+	      color: #4d0f01;
+	    }
+	  }
+	}
+}
+
+/*
+ * 错题回顾
+ */
+#cuoti {
+	.cthg {
+		width: 5.85rem;
+		height: 8.68rem;
+		background: url("../../img/cthg.png") no-repeat;
+		background-size: contain;
+		margin: .2rem auto .23rem;
+		position: relative;
+		font-size: 0;
+	.back {
+		position: absolute;
+		right: .1rem;
+		top: 0;
+		z-index: 500;
+		img {
+			width: .54rem;
+			height: auto;
+		}
+	}
+	.exec {
+		margin-top: 1.05rem;
+		margin-left: .55rem;
+		margin-right: .55rem;
+		height: 7rem;
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		&::-webkit-scrollbar-thumb {
+			background: url("../../img/scroll_bg.jpg") no-repeat;
+			background-repeat: repeat-y;
+			border-radius: 10px;
+		}
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: #3c2d14;
+			opacity: .3;
+			border-radius: 10px;
+		}
+		li {
+			font-size: .2554rem;
+		}
+		.exec-item {
+			font-size: .3071rem;
+			margin-right: .37rem;
+			border-bottom: 2px solid #c4ae72;
+			padding-bottom: .23rem;
+			&:first-child {
+				p {
+					margin-top: .2rem;
+				}
+			}
+			.options {
+				margin-left: .75rem;
+				li {
+					margin-bottom: .27rem;
+					color: #3e0000;
+					padding-left: .73rem;
+					line-height: 1;
+					position: relative;
+					.circ {
+						width: .12rem;
+						height: .12rem;
+						border-radius: 50%;
+						background-color: #fff;
+						position: absolute;
+						left: .06rem;
+						top: .06rem;
+					}
+					i {
+						position: absolute;
+						bottom: 0;
+						margin-left: .15rem;
+					}
+					@for $i from 1 to 4 {
+						&:nth-child(#{$i}) {
+							&::before {
+								position: absolute;
+								left: .40rem;
+								top: 0;
+								content: nth($options, $i);
+								display: inline-block;
+								font-size: .2531rem;
+							}
+						}
+					}
+					&::after {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						width: .2rem;
+						height: .2rem;
+						left: 0;
+						top: 0;
+						border: 2px solid #7d4a35;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+		.title {
+			margin-top: .35rem;
+			margin-bottom: .35rem;
+			font-size: .3074rem;
+			color: #3e0000;
+			font-weight: bold;
+		}
+	}
+}
+}
+
+/*
+ * SPA 效果
+ */
+.outer {
+	display: none;
+}

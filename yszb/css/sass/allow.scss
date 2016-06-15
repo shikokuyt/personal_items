@@ -1,0 +1,90 @@
+.bg {
+	background: url("../../img/entrance.jpg") no-repeat;
+	background-size: 100% 100%;
+
+}
+#rmcg {
+	.question {
+		font-size: .25rem;
+		color: #1d2835;
+		line-height: 1.4;
+		border-radius: 5px/3px;
+		background-color: #c6d2e0;
+		position: absolute;
+		border: .04rem solid #fff;
+		left: 1rem;
+		right: .5rem;
+		bottom: 5.05rem;
+		padding: .1rem .12rem;
+		font-size: .2047rem;
+		.gray {
+			display: inline-block;
+			margin-top: .04rem;
+			font-size: .1877rem;
+			color: #503800;
+			padding-left: .1877rem;
+		}
+		i {
+			bottom: -0.28rem;
+			left: 30px;
+		}
+	}	
+}
+.btn {
+	position: absolute;
+	bottom: .43rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.get {
+	width: 5.32rem;
+	height: 4.98rem;
+	background: url("../../img/txch.png") no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: .6rem;	
+	.title {
+		font-size: 0;
+		text-align: center;
+		margin-top: .15rem;
+		line-height: 1;
+		img {
+			width: .88rem;
+			height: .48rem;
+		}
+	}
+	.back {
+		position: absolute;
+		right: .12rem;
+		top: 0;
+		img {
+			width: .84rem;
+			height: auto;
+		}
+	}
+	.get-img {
+		height: 4rem;
+		margin-top: .15rem;
+		margin-left: .3rem;
+		margin-right: .3rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		img {
+			width: .9rem;
+			height: auto;
+		}
+		figure {
+			font-size: .2133rem;
+			color: #3e0000;
+		}
+	}
+}	
+
+/*
+ * SPA效果
+ */
+.outer {
+	display: none;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>燕山脚下</title>
+    <link rel="stylesheet" href="css/dist/base.css"> <!-- 基础配置 -->
+    <link rel="stylesheet" href="css/dist/index.css"> <!-- 燕山脚下 -->
+    <script src="js/fitRem.js"></script> <!-- REM 适配 -->
+    <meta content=”email=no” name=”format-detection”/>
+    <meta name="format-detection" content="telephone=no">
+    <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+</head>
+<body>
+<!--师姐地图-->
+<div class="map">
+    <a class="gut_10 " href="javascript:;"></a>
+    <a class="gut_9 gut_9_on" href="javascript:;"></a>
+    <a class="gut_8 gut_8_on" href="javascript:;"></a>
+    <a class="gut_7" href="javascript:;"></a>
+    <a class="gut_6 gut_6_on" href="javascript:;"></a>
+    <a class="gut_5 gut_5_on" href="javascript:;"></a>
+    <a class="gut_4 gut_4_on" href="javascript:;"></a>
+    <a class="gut_3 gut_3_on" href="javascript:;"></a>
+    <a class="gut_2" href="javascript:;"></a>
+    <a class="gut_1" href="javascript:;"></a>
+</div>
+<!--菜单-->
+<div class="menu">
+    <div class="btn-top">
+        <a class="map_btn store_off" href="javascript:;"></a>
+        <a class="map_btn pk_on" href="javascript:;"></a>
+        <a class="map_btn music_off" href="javascript:;"></a>
+    </div>
+    <div class="btn-bottom">
+        <div class="pc" href="javascript:;">
+            <a href="javascript:;" class="pc_icon_a">
+                <img src="" alt="">
+            </a>
+            <div class="info">
+                <p>无名游侠</p>
+                <p class="level">
+                    <span class="level linear-font">lv 99</span>
+                    <span class="exp">50/200</span>
+                </p>
+                <div>
+                    <span class="coin">9999</span>
+                    <span class="ingot">9999</span>
+                </div>
+            </div>
+        </div>
+        <a class="map_btn index_off" href="javascript:;"></a>
+        <a class="map_btn prop_on" href="javascript:;"></a>
+        <a class="map_btn task_on" href="javascript:;"></a>
+    </div>
+</div>
+<!--任务-->
+<div class="task" style="display: none">
+    <div class="link_container">
+        <a href="javascript:;" class="link linear-font">当前任务</a>
+        <a href="javascript:;" class="link">每日任务</a>
+        <a href="javascript:;" class="link">加入星盟</a>
+    </div>
+    <div class="container">
+        <p class="title">师姐密室</p>
+        <div class="content">
+            <img class="drop" src="img/map_task_drop.png" alt="">
+            <div class="detail">
+                <p class="headline">壹宝箱</p>
+                <img src="img/task_shijie_line.png" alt="">
+                <p>破解壹宝箱里的机关，获得师姐鞋履。</p>
+            </div>
+        </div>
+        <a class="btn" href="javascript:;">挑战</a>
+
+    </div>
+</div>
+<div class="prop">
+    <div class="link_container">
+        <a href="javascript:;" class="link linear-font">章节道具</a>
+        <a href="javascript:;" class="link">剧情道具</a>
+    </div>
+
+    <!--章节道具-->
+    <div class="prop_chapter" style="display: none;">
+        <div class="prop_container">
+            <div class="cell key_on">
+                <span></span>
+                <p class="yes">密室钥匙</p>
+            </div>
+            <div class="cell wuchang_on">
+                <span></span>
+                <p>武场门牌</p>
+            </div>
+            <div class="cell key_on">
+                <span></span>
+                <p>四章道具</p>
+            </div>
+            <div class="cell key_on">
+                <span></span>
+                <p>五章道具</p>
+            </div>
+            <div class="cell key_on">
+                <span></span>
+                <p>六章道具</p>
+            </div>
+            <div class="cell key_off">
+                <span></span>
+                <p>七章道具</p>
+            </div>
+            <div class="cell key_off">
+                <span></span>
+                <p>八章道具</p>
+            </div>
+            <div class="cell key_off">
+                <span></span>
+                <p>九章道具</p>
+            </div>
+        </div>
+        <div class="alert">
+            <div class="bg">
+                <p> 开启章节“<span>师姐密室</span>”使用，通关“<span>拜师入门</span>”会掉落。</p>
+            </div>
+        </div>
+    </div>
+    <!--剧情道具-->
+    <div class="prop_gut" style="display: none;">
+        <div class="prop_gut_1 prop_gut_1_on">
+            <p>神剑剑魂</p>
+            <span></span>
+        </div>
+        <img class="line" src="img/map_task_line.png" alt="">
+        <div class="prop_gut_2">
+            <p class="title">神剑碎片</p>
+            <span class="icon"></span>
+            <p class="count"><span>0</span>/10</p>
+        </div>
+        <img class="line" src="img/map_task_line.png" alt="">
+        <div class="prop_gut_3">
+            <p class="title">四步剑法</p>
+            <div class="img-container">
+                <div class="step_1_on">
+                    <span></span>
+                    <p>看人剑谱</p>
+                </div>
+                <div class="step_2 step_2_on">
+                    <span></span>
+                    <p>说心剑谱</p>
+                </div>
+                <div class="step_3 step_3_on">
+                    <span></span>
+                    <p>说理剑谱</p>
+                </div>
+                <div class="step_4 step_4_on">
+                    <span></span>
+                    <p>画型剑谱</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="personal-center">
+    <div class="link_container">
+        <a href="javascript:;" class="link linear-font">个人中心</a>
+    </div>
+    <div class="container">
+        <div class="info">
+            <div class="icon">
+                <img src="img/icon.png" alt="">
+            </div>
+            <div class="info_content">
+                <p>江湖称号：燕南天</p>
+                <p>金<span class="empty"></span>币：<span class="coin">8888</span></p>
+                <p>元<span class="empty"></span>宝：<span class="ingot">8888</span></p>
+                <p>等<span class="empty"></span>级：
+            <span class="detail">
+                <span class="level">LV 99</span>
+                <span class="exp">50/200</span>
+            </span>
+                </p>
+                <p>我的星盟：未加入任何星盟</p>
+            </div>
+        </div>
+        <div class="title"></div>
+        <div class="badge">
+            <div class="cell cell1 on">
+                <span></span>
+                <p>无名游侠</p>
+            </div>
+            <div class="cell cell2">
+                <span></span>
+                <p>燕山弟子</p>
+            </div>
+            <div class="cell cell3">
+                <span></span>
+                <p>燕山传人</p>
+            </div>
+            <br>
+            <div class="cell  cell4">
+                <span></span>
+                <p>一方豪杰</p>
+            </div>
+            <div class="cell  cell5">
+                <span></span>
+                <p>名传四海</p>
+            </div>
+            <br>
+            <div class="cell cell6">
+                <span></span>
+                <p>燕山掌门</p>
+            </div>
+            <div class="cell cell7">
+                <span></span>
+                <p>武林至尊</p>
+            </div>
+            <div class="cell cell8">
+                <span></span>
+                <p>徽总纵览</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

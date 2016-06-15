@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>燕山争霸之发型师频道</title>
+	<link rel="stylesheet" href="css/dist/base.css"> <!-- 基础配置 -->
+	<link rel="stylesheet" href="css/dist/challenge.css"> <!-- 挑战 -->
+	<script src="js/fitRem.js"></script> <!-- REM 适配 -->
+</head>
+<body>
+	<div class="bg">
+		
+	</div>
+	<script id="challenge-tmpl" type="text/html">
+		<!-- 看我出招 -->
+		<section id="kwcz" class="outer">
+		<section class="ques">
+			<div class="watch dhk">看我出招</div>
+			<div class="pagination"><span id="page">1</span>/<span id="pages">5</span></div>
+			<div class="ques-list">
+				<ul class="list-page">
+				<li>
+					<p>这是第一个问题啦啦啦啦啦？</p>
+					<div class="sel">
+						<div class="form-control">
+							<input name="sel1" id="sel1-1" type="radio">
+							<label for="sel1-1">
+								A&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel1" id="sel1-2" type="radio">
+							<label for="sel1-2">
+								B&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel1" id="sel1-3" type="radio">
+							<label for="sel1-3">
+								C&nbsp;选项选项选项
+							</label>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>这是第二个问题啦啦啦啦啦？</p>
+					<div class="sel">
+						<div class="form-control">
+							<input name="sel2" id="sel2-1" type="radio">
+							<label for="sel2-1">
+								A&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel2" id="sel2-2" type="radio">
+							<label for="sel2-2">
+								B&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel2" id="sel2-3" type="radio">
+							<label for="sel2-3">
+								C&nbsp;选项选项选项
+							</label>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>这是第三个问题啦啦啦啦啦？</p>
+					<div class="sel">
+						<div class="form-control">
+							<input name="sel3" id="sel3-1" type="radio">
+							<label for="sel3-1">
+								A&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel3" id="sel3-2" type="radio">
+							<label for="sel3-2">
+								B&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel3" id="sel3-3" type="radio">
+							<label for="sel3-3">
+								C&nbsp;选项选项选项
+							</label>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>这是第四个问题啦啦啦啦啦？</p>
+					<div class="sel">
+						<div class="form-control">
+							<input name="sel4" id="sel4-1" type="radio">
+							<label for="sel4-1">
+								A&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel4" id="sel4-2" type="radio">
+							<label for="sel4-2">
+								B&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel4" id="sel4-3" type="radio">
+							<label for="sel4-3">
+								C&nbsp;选项选项选项
+							</label>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>这是第五个问题啦啦啦啦啦？</p>
+					<div class="sel">
+						<div class="form-control">
+							<input name="sel5" id="sel5-1" type="radio">
+							<label for="sel5-1">
+								A&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel5" id="sel5-2" type="radio">
+							<label for="sel5-2">
+								B&nbsp;选项选项选项
+							</label>	
+						</div>
+						<div class="form-control">
+							<input name="sel5" id="sel5-3" type="radio">
+							<label for="sel5-3">
+								C&nbsp;选项选项选项
+							</label>	
+						</div>
+					</div>
+				</li>
+				</ul>
+			</div>
+		</section>
+		<div class="btns">
+			<a class="btn back">上一招</a>
+			<a class="btn next">出招</a>
+		</div>
+		</section>
+		<!-- /看我出招 -->
+
+		<!-- 挑战成功 -->
+		<section id="success" class="outer">
+		<img src="img/success.png" alt="胜利" class="logo">
+		<div class="detail">
+			<div class="use-time">通关用时: <time class="time">01:45</time></div>
+			<div class="finish">
+				<div class="gou">
+					<img src="img/gou_1.png" alt="正确">
+					<span class="zq">00</span>
+				</div>
+				<div class="cha">
+					<img src="img/cha_1.png" alt="错误">
+					<span class="cw">00</span>
+				</div>
+			</div>
+			<div class="get">
+				<div class="money">
+					<img src="img/money.png" alt="获得的金钱">
+					<span class="get-money">金钱+50</span>
+				</div>
+				<div class="jy">
+					<img src="img/layer.png" alt="获得的经验">	
+					<span class="get-layer">经验+50</span>			
+				</div>
+			</div>
+			<div class="get-img">
+				<div class="zlp">
+					<figure>
+						<img src="img/yb_10.png" alt="10个元宝">
+						<p>元宝</p>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="btn">重新挑战</a>
+			<a class="btn">确定</a>
+		</div>
+		</section>
+		<!-- /挑战成功 -->
+		
+		<!-- 挑战失败 -->
+		<section id="fail" class="outer">
+		<img src="img/fail.png" alt="失败" class="logo">
+		<div class="detail">
+			<div class="use-time">通关用时: <time class="time">01:45</time></div>
+			<div class="finish">
+				<div class="gou">
+					<img src="img/gou_1.png" alt="正确">
+					<span class="zq">01</span>
+				</div>
+				<div class="cha">
+					<img src="img/cha_1.png" alt="错误">
+					<span class="cw">04</span>
+				</div>
+			</div>
+			<div class="get">
+				<div class="money">
+					<img src="img/money.png" alt="获得的金钱">
+					<span class="get-money">金钱+50</span>
+				</div>
+				<div class="jy">
+					<img src="img/layer.png" alt="获得的经验">	
+					<span class="get-layer">经验+50</span>			
+				</div>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="btn">重新挑战</a>
+			<a class="btn">确定</a>
+		</div>
+		</section>
+		<!-- /挑战失败 -->
+
+		<!-- 升级 -->
+		<section id="upgrade" class="outer">
+		<div class="main">
+        <div class="upgrade">
+            <img class="title" src="img/upgrade_word.png" alt="">
+            <img class="upgrade_img" src="img/upgrade.png" alt="">
+            <p>等级提升为2级</p>
+            <a href="javascript:;" class="btn">确定</a>
+        </div>
+    	</div>
+		</section>
+		<!-- /升级 -->
+
+		<!-- 错题回顾 -->
+		<section id="cuoti" class="outer">
+		<div class="cthg">
+			<a class="back">
+				<img src="img/back_zy.png" alt="主页">
+			</a>
+			<div class="BFC">
+				<section class="exec">
+					<ul class="exec-list">
+						<li class="exec-item">
+							<p class="title">这是第一个问题啦啦啦啦啦?</p>
+							<ul class="options">
+								<li class="check">
+									选项选项选项
+								</li>
+								<li>
+									选项选项选项
+								</li>
+								<li class="bingo">
+									选项选项选项
+								</li>
+							</ul>
+						</li>
+						<li class="exec-item">
+							<p class="title">这是第一个问题啦啦啦啦啦?</p>
+							<ul class="options">
+								<li class="check">选项选项选项</li>
+								<li class="bingo">选项选项选项</li>
+								<li>选项选项选项</li>
+							</ul>
+						</li>
+						<li class="exec-item">
+							<p class="title">这是第一个问题啦啦啦啦啦?</p>
+							<ul class="options">
+								<li class="check">选项选项选项</li>
+								<li class="bingo">选项选项选项</li>
+								<li>选项选项选项</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<a class="btn">重新挑战</a>
+		</section>
+		<!-- /错题回顾 -->
+	</script>
+	<!-- 引入jQuery3.0 -->
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script>
+		$(function () {
+			var hash, 
+				id,
+				href;
+			$('.bg').html($('#challenge-tmpl').html())
+			hash = location.hash;
+			id = hash;
+			if (hash === '') {
+				$('#upgrade').show(600, function () {
+					sflx();
+				})
+			} else {
+				$(id).show(600, function () {
+					if (true) { /* 升级条件 */
+						$('#upgrade').slideDown(1000);
+					}
+				})
+			}
+			$(window).on('hashchange', function () {
+				hash = location.hash;
+				id = hash === ''?'#kwcz':hash;
+				$('.outer').hide();
+				$(id).show(600);
+				if (id === '#success' || id === '#fail') {
+					if (true) { /* 升级条件 */
+						$('#upgrade').slideDown(1000);
+					}	
+				}
+			});
+
+		})
+
+		/*
+		 * 师傅练习
+		 */
+		function sflx() {
+			var 
+			$ = function (selector) {
+				return document.querySelector(selector);
+			},
+			$$ = function (selectors) {
+				return document.querySelectorAll(selectors);
+			},
+
+			$back = $('.back'),       // 上一题
+			$next = $('.next'), 	  // 切换题目
+			$lists = $('.list-page'), // 列表
+
+			$page = $('#page'), 	  // 第几页
+			$pages = $('#pages'),     // 页数
+
+			page = parseInt($page.innerHTML),
+			pages = parseInt($pages.innerHTML);
+
+			$lists.style.width = pages * 100 + '%';
+
+			/*
+			 * 切换题目
+			 * @param { Object } 列表对象
+			 * @param { number } 第几页
+			 * @param { number } 总页数
+			 */
+
+			function change(lists) {	
+				// 需要判断此道题目是否已选
+				var inps = null;
+				inps = lists.children[page-1].getElementsByTagName('input');
+				if (each(inps)) {
+					page ++;
+					render(lists);
+				} else {
+					// alert('本道题您并没有完成!')
+					inps = null;
+				}
+			}
+
+			/*
+			 * 渲染题目
+			 */
+			function render(lists) {
+				$page.innerHTML = page;
+				lists.style.transform = "translateX("+(page-1)*(-100/pages)+"%)";
+			}
+
+			/*
+			 * 遍历函数
+			 * @param { elems }
+			 * @return { Boolean }
+			 */
+			function each(elems) {
+				var i, len = elems.length;
+				for (i=0; i<len; i++) {
+					if (elems[i].checked) {
+						return true
+					}
+				}
+				return false;
+			}
+
+			$next.addEventListener('click', function () {
+				if (page >= pages) {
+					/*
+					 * 判断是挑战成功
+					 * 还是挑战失败
+					 */
+					if (true) {
+						location.hash = '#success';
+					} else {
+						location.hash = '#fail';
+					}
+
+					return;
+					/*
+					 * 当代码运行到此处表明题目解答完毕
+					 */
+				}
+				change($lists);
+			}, false);
+			$back.addEventListener('click', function () {
+				if (page === 1) 
+					return;
+				page --;
+				render($lists);
+			}, false);
+		}
+
+		/*
+		 * 错题回顾
+		 */
+		function cthg() {
+			var $cha = document.querySelectorAll('.check');
+			var $gou = document.querySelectorAll('.bingo');
+
+			each($cha, render); // 遍历玩家选择
+			each($gou, render); // 遍历正确选择
+			function render(ele) {
+				var cls = ele.className === 'check'?'cha':'gou';
+				var i = document.createElement('i');
+				i.className = cls;
+				ele.appendChild(i);
+				i = null;
+				if (cls === 'cha') {
+					var div = document.createElement('div');
+					div.className = 'circ';
+					ele.insertBefore(div, ele.firstChild);
+					div = null;
+				}
+			}
+			function each(eles, fn) {
+				eles = [].slice.call(eles, 0);
+				eles.forEach(function (d) {
+					fn && fn(d);
+				});
+			}
+		}
+
+	</script>
+</body>
+</html>

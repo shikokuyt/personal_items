@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+.bg {
+	background: url("../../img/entrance.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.explain {
+	width: 1.82rem;
+	height: 4.62rem;
+	background: url("../../img/explain.png") no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -200;
+}
+.tianxie {
+	/* 填写称呼 */
+	width: 5.32rem;
+	height: 4.98rem;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	background: url("../../img/txch.png") no-repeat;
+	background-size: cover;
+	text-align: center;
+	top: .72rem;
+	font-size: 0;
+	z-index: 1;
+	.title {
+		font-size: 0;
+		text-align: center;
+		margin-top: .2rem;
+	}	
+	.sx-logo {
+		/* 少侠头像 */
+		width: 1.99rem;
+		height: 2.03rem;
+		margin-top: .22rem;
+		margin-bottom: .25rem;
+	}
+	.wmyx-logo {
+		/* 无名游侠 */
+		width: 2.32rem;
+		height: 2.15rem;
+		margin-top: .58rem;
+	}
+	input {
+		display: block;
+		width: 3.22rem;
+		height: .53rem;
+		background: url("../../img/input.png") no-repeat;
+		background-size: contain;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+/*
+ * 对话框公共样式
+ */
+.question {
+	padding: .14rem .2rem;
+	position: absolute;
+	border: .04rem solid #fff;
+	font-size: .25rem;
+	color: #1d2835;
+	line-height: 1.4;
+	border-radius: 8px/6px;
+	background-color: #c6d2e0;
+	i {
+		bottom: -0.28rem;
+		left: 15px;
+	}
+}
+
+/*
+ * 对话框特有样式
+ */
+.sfzh {
+	/* 师傅招呼 */
+	left: 1.7rem;
+	bottom: 4.85rem;
+}
+.sxhh {
+	/* 少侠回话 */
+	right: .8rem;
+	left: auto;
+	bottom: 5.05rem;
+	i {
+		right: 15px;
+		left: auto;
+	}
+}
+.rmtj {
+	/* 入门条件 */
+	left: 1.7rem;
+	bottom: 4.95rem;
+}
+.btsh {
+	/* 伴童说话 */
+	left: 2.1rem;
+	right: .25rem;
+	bottom: 5rem;
+	i {
+		left: 45px;
+	}
+}
+
+
+/*
+ * Btn距离底部43px
+ */
+.b43 {
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	bottom: .43rem;
+}
+
+/*
+ * 控制显示与否，hash值判断显示哪个
+ */
+section {
+	display: none;
+}

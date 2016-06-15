@@ -1,0 +1,1026 @@
+html {
+  width: 100%;
+  height: 100%;
+  body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .map {
+      width: 100%;
+      height: 14.31rem;
+      background: url("../../img/map_bg.jpg") no-repeat;
+      background-size: cover;
+      position: relative;
+      .gut_1 {
+        position: absolute;
+        bottom: 2.5rem;
+        right: 1.1rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 100%;
+        width: 1.5rem;
+        height: 1.2rem;
+        display: block;
+      }
+      .gut_2 {
+        position: absolute;
+        bottom: 4.5rem;
+        right: .8rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 89%;
+        width: 1.6rem;
+        height: 1.3rem;
+        display: block;
+      }
+      .gut_3 {
+        position: absolute;
+        bottom: 3.8rem;
+        left: .2rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 78%;
+        width: 1.5rem;
+        height: 1.3rem;
+        display: block;
+      }
+      .gut_3_on {
+        position: absolute;
+        bottom: 3.8rem;
+        left: .3rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 78%;
+        width: 1.5rem;
+        height: 1.3rem;
+        display: block;
+      }
+      .gut_4 {
+        position: absolute;
+        bottom: 5.2rem;
+        left: 1.9rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 67%;
+        width: 1.6rem;
+        height: 1.2rem;
+        display: block;
+      }
+      .gut_4_on {
+        position: absolute;
+        bottom: 5.2rem;
+        left: 1.9rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 67%;
+        width: 1.6rem;
+        height: 1.2rem;
+        display: block;
+      }
+      .gut_5 {
+        position: absolute;
+        bottom: 8.35rem;
+        left: 1.2rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 56%;
+        width: 1.6rem;
+        height: 1.2rem;
+        display: block;
+      }
+      .gut_5_on {
+        position: absolute;
+        bottom: 8.35rem;
+        left: 1.2rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 56%;
+        width: 1.6rem;
+        height: 1.2rem;
+        display: block;
+      }
+      .gut_6 {
+        position: absolute;
+        bottom: 7rem;
+        left: 2.8rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 45%;
+        width: 1.6rem;
+        height: 1.2rem;
+        display: block;
+      }
+      .gut_6_on {
+        position: absolute;
+        bottom: 7rem;
+        left: 2.7rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 45%;
+        width: 1.6rem;
+        height: 1.2rem;
+        display: block;
+      }
+      .gut_7 {
+        position: absolute;
+        bottom: 11.7rem;
+        right: 1rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 25%;
+        width: 1.6rem;
+        height: 1.1rem;
+        display: block;
+      }
+      .gut_7_on {
+        position: absolute;
+        bottom: 11.9rem;
+        right: 1.1rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 25%;
+        width: 1.6rem;
+        height: 1.1rem;
+        display: block;
+      }
+      .gut_8 {
+        position: absolute;
+        bottom: 9rem;
+        right: .5rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 25%;
+        width: 1.6rem;
+        height: 1.1rem;
+        display: block;
+      }
+      .gut_8_on {
+        position: absolute;
+        bottom: 9rem;
+        right: .5rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 100% 25%;
+        width: 1.6rem;
+        height: 1.1rem;
+        display: block;
+      }
+      .gut_9 {
+        position: absolute;
+        bottom: 11.3rem;
+        left: .65rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 12%;
+        width: 1.5rem;
+        height: 1.6rem;
+        display: block;
+      }
+      .gut_9_on {
+        position: absolute;
+        bottom: 11.3rem;
+        left: .4rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 90% 12%;
+        width: 1.6rem;
+        height: 1.6rem;
+        display: block;
+      }
+      .gut_10 {
+        position: absolute;
+        bottom: 12.6rem;
+        left: 2rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 0% 0%;
+        width: 1.4rem;
+        height: 1.5rem;
+        display: block;
+      }
+      .gut_10_on {
+        position: absolute;
+        bottom: 12.6rem;
+        left: 1.75rem;
+        background: url("../../img/map_sprites.png") no-repeat;
+        background-size: 3.01rem 12.57rem;
+        background-position: 90% 0%;
+        width: 1.6rem;
+        height: 1.5rem;
+        display: block;
+      }
+    }
+    .menu {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      zoom: 1;
+      overflow: hidden;
+      .map_btn {
+        width: .82rem;
+        height: .81rem;
+        display: inline-block;
+      }
+      .btn-top {
+        zoom: 1;
+        overflow: hidden;
+        .map_btn {
+          float: right;
+          margin: .15rem .1rem 0 0;
+        }
+        .music_off, .music_on, .pk_off, .pk_on, .store_off, .store_on {
+          background: url("../../img/map-menu.png") no-repeat;
+          background-size: 1.6rem 6.91rem;
+        }
+        .music_off {
+          background-position: 0 -4.3rem ;
+          width: .8rem;
+          height: .8rem;
+        }
+        .music_on {
+          height: .80rem;
+          background-position: -.8rem -4.3rem;
+        }
+        .pk_off {
+          background-position: 0 -3.44rem;
+          width: .81rem;
+          height: .82rem;
+        }
+        .pk_on {
+          background-position: -.8rem -3.44rem   ;
+          width: .81rem;
+          height: .82rem;
+        }
+        .store_off {
+          background-position: 0 -.85rem;
+          width: .81rem;
+        }
+        .store_on {
+          width: .81rem;
+          background-position: -.8rem -.85rem;
+        }
+      }
+      .btn-bottom {
+        position: absolute;
+        bottom: 0;
+        zoom: 1;
+        overflow: hidden;
+        .pc, .map_btn {
+          float: left;
+        }
+        .map_btn {
+          margin: .15rem .1rem 0 0;
+        }
+        .pc {
+          position: relative;
+          margin: 0 .1rem .05rem .05rem;
+          width: 2.75rem;
+          height: 1.18rem;
+          .pc_icon_a {
+            z-index: 2;
+            background: url("../../img/map_pc_icon_bg.png") no-repeat;
+            background-size: cover;
+            display: inline-block;
+            width: 1.18rem;
+            height: 1.18rem;
+            position: relative;
+            img {
+              border: none;
+              position: absolute;
+              top: 43%;
+              left: 60%;
+              transform: translate(-57%, -40%);
+              width: .95rem;
+              height: .95rem;
+              border-radius: .475rem;
+              -webkit-border-radius: .475rem;
+              display: block;
+              background: red;
+            }
+          }
+          .info {
+            z-index: 1;
+            position: absolute;
+            left: .95rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url("../../img/map_pc_bg.png") no-repeat;
+            width: 1.832rem;
+            height: .78rem;
+            background-size: cover;
+            p {
+              font-size: .2rem;
+              color: #ffffff;
+              text-align: center;
+              font-family: 'yszb';
+              &:first-child {
+                margin: .02rem 0 .02rem;
+              }
+              span {
+                font-size: .17rem;
+              }
+              &.level {
+                background: #FF4200;
+                -webkit-border-bottom-right-radius: .05rem;
+                -webkit-border-top-right-radius: .05rem;
+                box-shadow: 1px 1px 3px 0 #000;
+                position: relative;
+                height: .2rem;
+                box-sizing: content-box;
+                span {
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+                span.exp {
+                  left: 1.05rem;
+                  top: 57.5%;
+                  margin-left: .1rem;
+                }
+                span.level {
+                  font-size: .2rem;
+                  left: .3rem;
+                  width: .6rem;
+                  height: .3rem;
+                  top: 67%;
+                }
+              }
+            }
+            div {
+              font-size: 0;
+              padding-left: .45rem;
+              text-align: center;
+              width: 1.9rem;
+              zoom: 1;
+              overflow: hidden;
+              margin-top: .03rem;
+              span {
+                position: relative;
+                float: left;
+                background: #5A3C24;
+                border: 1px;
+                font-size: .2rem;
+                display: inline-block;
+                color: #fff;
+                margin-right: .25rem;
+                width: .5rem;
+                height: .22rem;
+                text-align: center;
+                border-radius: .05rem;
+                border: 1px solid #4F2E19;
+                border-bottom: none;
+                border-left: none;
+                &.coin {
+                  &:before {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -.2rem;
+                    content: '';
+                    background: url("../../img/map_pc_coin_small.png") no-repeat;
+                    background-size: cover;
+                    width: .21rem;
+                    height: .21rem;
+                    display: inline-block;
+                  }
+                }
+                &.ingot {
+                  &:before {
+                    position: absolute;
+                    top: 50%;
+                    left: -.2rem;
+                    transform: translateY(-50%);
+                    content: '';
+                    background: url("../../img/map_pc_ingot_small.png") no-repeat;
+                    background-size: cover;
+                    width: .21rem;
+                    height: .19rem;
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .index_off, .index_on, .prop_off, .prop_on, .task_off, .task_on {
+          background: url("../../img/map-menu.png") no-repeat;
+          background-size: 1.6rem 6.91rem;
+        }
+        .index_off {
+          background-position: 0 0;
+          width: .81re m;
+          height: .85rem;
+        }
+        .index_on {
+          background-position: -.8rem 0;
+          width: .81rem;
+          height: .85rem;
+        }
+        .prop_off {
+          background-position: 0 -2.6rem ;
+          width: .8rem;
+          height: .835rem;
+        }
+        .prop_on {
+          background-position: -.8rem -2.6rem;
+          width: .8rem;
+          height: .835rem;
+        }
+        .task_off {
+          background-position: 0 -1.7rem;
+          height: .85rem;
+        }
+        .task_on {
+          background-position: -.8rem -1.7rem;
+          height: .83rem;
+        }
+      }
+    }
+    .task {
+      background: url("../../img/map_task_bg.png") no-repeat;
+      background-size: cover;
+      text-align: center;
+      width: 6.35rem;
+      height: 7.91rem;
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      .link_container {
+        font-size: 0;
+        padding-top: .18rem;
+        .link {
+          font-family: 'yszb';
+          font-size: .25rem;
+          display: inline-block;
+          text-decoration: none;
+          color: #ffffff;
+          padding: 0 .4rem;
+          border-right: 1px solid #8F480B;
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+      .title {
+        background: url("../../img/task_shijie_bg.png") no-repeat;
+        background-size: 2.65rem .49rem;
+        width: 2.65rem;
+        height: .49rem;
+        margin: .5rem auto 0 auto;
+        text-align: center;
+        color: #3E0100;
+        font-size: .3rem;
+        font-family: 'yszb';
+        line-height: .57rem;
+      }
+      .content {
+        font-size: 0;
+        background: url(../../img/task_shijie_content_bg.jpg) no-repeat;
+        background-size: 5.52rem 5.67rem;
+        position: relative;
+        margin: 0 auto;
+        width: 5.52rem;
+        height: 5.67rem;
+        img.drop {
+          width: 2.41rem;
+          height: 2.01rem;
+          margin: 1rem 0 .5rem 0;
+        }
+        .detail {
+          font-size: 0;
+          margin: 0 auto;
+          width: 4.4rem;
+          height: 1.08rem;
+          .headline {
+            font-family: 'yszb';
+            font-size: .4rem;
+            color: #642A29;
+          }
+          img {
+            width: 2.14rem;
+            height: .04rem;
+            margin: .05rem 0;
+          }
+          p {
+            color: #652A00;
+            font-size: .25rem;
+          }
+        }
+
+      }
+      .btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: .9rem;
+      }
+    }
+    .prop {
+      background: url("../../img/map_task_bg.png") no-repeat;
+      background-size: cover;
+      width: 6.35rem;
+      height: 7.91rem;
+      position: fixed;
+      font-size: 0;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      .link_container {
+        font-size: 0;
+        padding-top: .18rem;
+        margin: 0 0 .2rem .48rem;
+        .link {
+          font-family: 'yszb';
+          font-size: .25rem;
+          display: inline-block;
+          text-decoration: none;
+          color: #ffffff;
+          padding: 0 .85rem;
+          border-right: 1px solid #8F480B;
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+      .prop_chapter {
+        position: relative;
+        top: -.05rem;
+        background: url("../../img/task_gut_bg.png") no-repeat;
+        background-size: 5.52rem 6.65rem;
+        width: 5.52rem;
+        height: 6.65rem;
+        margin: 0 auto;
+        .prop_container {
+          width: 5.05rem;
+          margin: 0 auto;
+          .cell {
+            display: inline-block;
+            font-size: 0;
+            text-align: center;
+            margin: .5rem .28rem 0 .28rem;
+            span {
+              background: url("../../img/prop_sprite.png") no-repeat;
+              background-size: 2.27rem 10.138rem;
+              width: 1.11rem;
+              height: 1.11rem;
+              display: inline-block;
+            }
+            p {
+              font-size: .23rem;
+            }
+          }
+          .key_on {
+            span {
+              background-position: 95% 0%;
+            }
+            p {
+              color: #000;
+            }
+          }
+          .key_off {
+            span {
+              background-position: 0% 0%;
+            }
+            p {
+              color: #9D9782;
+            }
+          }
+          .wuchang_on {
+            span {
+              background-position: 95% 50%;
+            }
+            p {
+              color: #000;
+            }
+          }
+          .wuchang_off {
+            span {
+              background-position: 0% 50%;
+            }
+            p {
+              color: #9D9782;
+            }
+          }
+        }
+        .alert {
+          text-align: center;
+          width: 100%;
+          height: 1.6rem;
+          background: rgba(0, 0, 0, 0.7);
+          position: absolute;
+          top: 47%;
+          transform: translateY(-53%);
+          .bg {
+            background: url("../../img/gut_bg.png") no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 1.42rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            p {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: .23rem;
+              color: #ffffff;
+              span {
+                color: #DF3737;
+              }
+            }
+          }
+        }
+      }
+      .line {
+        width: 4.98rem;
+        height: .06rem;
+        margin: .3rem auto;
+      }
+      .prop_gut {
+        position: relative;
+        top: -.04rem;
+        background: url("../../img/task_gut_bg.png") no-repeat;
+        background-size: 5.52rem 6.65rem;
+        width: 5.52rem;
+        height: 6.65rem;
+        margin: 0 auto;
+        text-align: center;
+        .prop_gut_1 {
+          padding-top: .4rem;
+          font-size: .25rem;
+          span {
+            width: 1.08rem;
+            height: 1.08rem;
+            display: block;
+            margin: .1rem auto 0 auto;
+          }
+        }
+        .prop_gut_1_off {
+          color: #8C8A87;
+          span {
+            background: url("../../img/prop_sprite.png") no-repeat;
+            background-size: 2.21rem 9.87rem;
+            background-position: 0% 12.5%;
+          }
+        }
+        .prop_gut_1_on {
+          color: #000000;
+          span {
+            background: url("../../img/prop_sprite.png") no-repeat;
+            background-size: 2.21rem 9.87rem;
+            background-position: 95% 12.5%;
+          }
+        }
+        .prop_gut_2 {
+          margin: 0 auto;
+          width: 1.16rem;
+          font-size: .25rem;
+          color: #010101;
+          position: relative;
+          .title {
+            padding-bottom: .1rem;
+          }
+          .icon {
+            background: url("../../img/prop_sprite.png") no-repeat;
+            background-size: 2.21rem 9.87rem;
+            background-position: 95% 50%;
+            display: block;
+            width: 1.08rem;
+            height: 1.08rem;
+          }
+          .count {
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            right: .1rem;
+            span {
+              font-size: .4rem;
+            }
+          }
+        }
+        .prop_gut_3 {
+          .title {
+            font-size: .23rem;
+            margin-bottom: .2rem;
+          }
+          .img-container {
+            div {
+              display: inline-block;
+              margin: 0 .1rem;
+              p {
+                color: #9D9782;
+                font-size: .21rem;
+              }
+              span {
+                width: .75rem;
+                height: .75rem;
+                display: inline-block;
+                background: url("../../img/prop_sprite.png") no-repeat;
+                background-size: 1.616rem 7.22rem;
+              }
+            }
+            .step_1_on {
+              span {
+                background-position: 95% 62.5%;
+              }
+              p {
+                color: #000;
+              }
+            }
+
+            .step_1_off {
+              span {
+                background-position: 0% 62.5%;
+              }
+            }
+
+            .step_2_on {
+              span {
+                background-position: 95% 75%;
+              }
+              p {
+                color: #000;
+              }
+            }
+
+            .step_2_off {
+              span {
+                background-position: 0% 75%;
+              }
+            }
+
+            .step_3_on {
+              span {
+                background-position: 95% 87.5%;
+              }
+              p {
+                color: #000;
+              }
+            }
+
+            .step_3_off {
+              span {
+                background-position: 0% 87.5%;
+              }
+            }
+
+            .step_4_on {
+              span {
+                background-position: 95% 100%;
+              }
+              p {
+                color: #000;
+              }
+            }
+
+            .step_3_off {
+              span {
+                background-position: 0% 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .personal-center {
+      background: url("../../img/map_task_bg.png") no-repeat;
+      background-size: cover;
+      text-align: center;
+      width: 6.35rem;
+      height: 7.91rem;
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      .link_container {
+        font-size: 0;
+        padding-top: .18rem;
+        .link {
+          font-family: 'yszb';
+          font-size: .25rem;
+          display: inline-block;
+          text-decoration: none;
+          color: #ffffff;
+          padding: 0 .4rem;
+          border-right: 1px solid #8F480B;
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+      .container {
+        background: url("../../img/task_gut_bg.png") no-repeat;
+        background-size: 5.52rem 6.65rem;
+        width: 5.52rem;
+        height: 6.65rem;
+        margin: 0 auto;
+        position: relative;
+        top: .17rem;
+        font-size: 0;
+        .info {
+          zoom: 1;
+          overflow: hidden;
+          .icon, .info_content {
+            float: left;
+          }
+          .icon {
+            margin: .4rem 0 0 .4rem;
+            width: 1.68rem;
+            height: 1.68rem;
+            border-radius: 0.84rem;
+            -webkit-border-radius: 0.84rem;
+            overflow: hidden;
+            img {
+              width: 1.68rem;
+              height: 1.68rem;
+            }
+          }
+          .info_content {
+            text-align: left;
+            color: #400001;
+            margin: .5rem 0 0 .3rem;
+            font-size: 0;
+            p {
+              font-size: .21rem;
+              line-height: .3rem;
+              .empty {
+                width: .415rem;
+                display: inline-block;
+              }
+              .coin {
+                position: relative;
+                left: .38rem;
+                &:before {
+                  position: absolute;
+                  top: 50%;
+                  -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                  left: -.35rem;
+                  content: '';
+                  background: url("../../img/map_pc_coin_big.png") no-repeat;
+                  background-size: cover;
+                  width: .24rem;
+                  height: .3rem;
+                  display: inline-block;
+                }
+              }
+              .ingot {
+                position: relative;
+                left: .4rem;
+                &:before {
+                  position: absolute;
+                  top: 50%;
+                  -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                  left: -.4rem;
+                  content: '';
+                  background: url("../../img/map_pc_ingot_big.png") no-repeat;
+                  background-size: cover;
+                  width: .36rem;
+                  height: .26rem;
+                  display: inline-block;
+                }
+              }
+              .detail {
+                background: #FF4200;
+                width: 1.74rem;
+                height: .16rem;
+                border: 1px solid #FFC501;
+                display: inline-block;
+                border-radius: .08rem;
+                -webkit-border-radius: .08rem;
+                position: relative;
+                left: -.1rem;
+                .level, .exp {
+                  position: absolute;
+                  bottom: 0;
+                }
+                .level {
+                  left: .1rem;
+                }
+                .exp {
+                  color: #ffffff;
+                  left: .8rem;
+                  font-size: .18rem;
+                  bottom: -.06rem;
+                }
+              }
+            }
+          }
+        }
+        .title {
+          background: url("../../img/pc_title_bg.png") no-repeat;
+          background-size: cover;
+          width: 2.64rem;
+          height: .54rem;
+          margin: 0 auto;
+          position: relative;
+          top: .65rem;
+        }
+
+        .badge {
+          margin: .4rem auto;
+          width: 5.34rem;
+          height: 3.3rem;
+          border-radius: 0.1rem;
+          -webkit-border-radius: .1rem;
+          font-size: 0;
+          background: rgba(214, 193, 130, .8);
+          overflow-x: hidden;
+          overflow-y: scroll;
+          padding-top: .2rem;
+          &::-webkit-scrollbar-thumb {
+            background: url("../../img/scroll_bg.jpg") no-repeat;
+            background-repeat: repeat-y;
+            border-radius: 10px;
+          }
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+          &::-webkit-scrollbar-track {
+            background-color: #3c2d14;
+            opacity: .3;
+            border-radius: 10px;
+          }
+          .on {
+            p {
+              color: #3F0000 !important;
+            }
+          }
+          .cell {
+            display: inline-block;
+            margin: .1rem .2rem;
+            span {
+              background: url("../../img/badge.png") no-repeat;
+              background-size: 2.27rem 4.24rem;
+              width: 1.1rem;
+              height: 1.1rem;
+              display: inline-block;
+              margin-top: .2rem;
+            }
+            p {
+              color: #8F8C87;
+              font-size: .25rem;
+            }
+          }
+          .cell_2 {
+            margin: 0 .42rem;
+          }
+          .cell1 {
+            span {
+              background-position: 0% -2%;
+            }
+          }
+          .cell2 {
+            span {
+              background-position: 95% -2%;
+            }
+          }
+          .cell3 {
+            span {
+              background-position: 0% 32%;
+            }
+          }
+          .cell4 {
+            span {
+              background-position: 95% 32%;
+            }
+          }
+          .cell5 {
+            span {
+              background-position: 0% 66%;
+            }
+          }
+          .cell6 {
+            span {
+              background-position: 95% 65.5%;
+            }
+          }
+          .cell7 {
+            span {
+              background-position: 0% 101%;
+            }
+          }
+          .cell8 {
+            span {
+              background-position: 95% 101%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

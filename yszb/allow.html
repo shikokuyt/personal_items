@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>燕山脚下</title>
+	<link rel="stylesheet" href="css/dist/base.css"> <!-- 基础配置 -->
+	<link rel="stylesheet" href="css/dist/allow.css"> <!-- 入门成功 -->
+	<script src="js/fitRem.js"></script> <!-- REM 适配 -->
+</head>
+<body>
+	<div class="bg">
+		
+	</div>
+	<script id="allow-tmpl" type="text/html">
+		<!-- 入门成功 -->
+		<section id="rmcg" class="outer">
+		<div class="question">
+			燕少侠，今日我就正式收你为弟子，虽然您基础扎实，还需勤加练习。这里有后山钥匙一把，去“后山密室”寻找你的师姐，她自会安排你的修练。<br><span class="gray">掌门暗中向燕天行身体打入“神剑剑魂”</span>
+			<i class="sanjiao"></i>
+		</div>
+		<a href="#find-sj" class="btn">继续</a>
+		</section>
+		<!-- /入门成功 -->
+
+		<!-- 获得物品并寻找师姐 -->
+		<section id="find-sj" class="outer">
+		<section class="get">
+			<p class="title">
+				<img src="img/get.png" alt="获得">
+			</p>
+			<a class="back">
+				<img src="img/back_zy_1.png" alt="主页">
+			</a>
+			<div class="get-img">
+				<figure>
+					<img src="img/msys.png" alt="密室钥匙">
+					<p>密室钥匙</p>
+				</figure>
+				<figure>
+					<img src="img/sjjh.png" alt="神剑剑魂">
+					<p>神剑剑魂</p>
+				</figure>
+			</div>
+		</section>
+		<a href="#" class="btn">去找师姐</a>
+		</section>
+		<!-- /获得物品并寻找师姐 -->
+	</script>
+	<!-- 引入jQuery3.0 -->
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script>
+		$(function () {
+			var hash,
+				id;
+			$('.bg').html($('#allow-tmpl').html());
+			hash = location.hash;
+			id = hash === ''?'#rmcg':hash;
+			$(id).show(600);
+
+			$(window).on('hashchange', function () {
+				$('.outer').hide();
+				hash = location.hash;
+				id = hash === ''?'#rmcg':hash;
+				$(id).show(600);
+			})
+		});
+	</script>
+</body>
+</html>

@@ -1,206 +1,234 @@
 @charset "utf-8";
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 /*
  * 清除浏览器样式
  */
 ul, li {
-	list-style: none;
+  list-style: none;
 }
 
 /*
  * 滚动条样式, webkit内核
  */
 ::-webkit-scrollbar-track {
-	background-color: rgba(0, 0, 0, .3);
-} /* 滑动条滑轨背景颜色 */
+  background-color: rgba(0, 0, 0, .3);
+}
+
+/* 滑动条滑轨背景颜色 */
 
 /*
  * 燕山争霸字体
  */
 @font-face {
-	font-family: 'yszb';
-	//src: url('../../font/FZYHJW_0.TTF')  format('truetype');
+  font-family: 'yszb';
+  //src: url('../../font/FZYHJW_0.TTF')  format('truetype');
 }
 
 /*
  * background img
  */
 .bg {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 /*
  * title font
  */
 .title {
-	img {
-		width: 1.3648rem;
-		height: auto;
-	}
+  img {
+    width: 1.3648rem;
+    height: auto;
+  }
 }
 
 /*
  * 按钮组
  */
 .btns {
-	height: .51rem;
-	margin: 0 1.3rem;
-	display: flex;
-	justify-content: space-between;
-	.btn {
-		margin: 0;
-	}
+  height: .51rem;
+  margin: 0 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  .btn {
+    margin: 0;
+  }
 }
 
 /*
  * 按钮
  */
 .btn {
-	display: block;
-	font-size: .2389rem;
-	width: 1.32rem;
-	line-height: .53rem;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	height: .53rem;
-	background: url("../../img/btn_bg.png") center center no-repeat;
-	background-size: contain;
-	font-family: 'yszb';
-	color: #fff;
+  display: block;
+  font-size: .2389rem;
+  width: 1.32rem;
+  line-height: .53rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: .53rem;
+  background: url("../../img/btn_bg.png") center center no-repeat;
+  background-size: contain;
+  font-family: 'yszb';
+  color: #fff;
 }
 
 /*
  * 对话框
  */
 .dhk {
-	border: 4px solid #fff;
-	background-color: #c6d2e0;
-	display: table;
-	padding: .12rem .66rem;
-	border-radius: 8px;
-	position: absolute;
-	/* 箭头 */
-	&::before {
-		content: '';
-		position: absolute;
-		border-width: 15px 6px 0;
-		border-style: solid;
-		transform: rotate(40deg);
-		left: -7px;
-		bottom: -12px;
-		border-color: #fff transparent transparent; 
-	}
-	&::after {
-		content: '';
-		position: absolute;
-		border-width: 9px 3px 0;
-		border-style: solid;
-		transform: rotate(40deg);
-		left: -2px;
-		bottom: -6px;
-		border-color: #c6d2e0 transparent transparent; 
-	}
+  border: 4px solid #fff;
+  background-color: #c6d2e0;
+  display: table;
+  padding: .12rem .66rem;
+  border-radius: 8px;
+  position: absolute;
+  /* 箭头 */
+  &::before {
+    content: '';
+    position: absolute;
+    border-width: 15px 6px 0;
+    border-style: solid;
+    transform: rotate(40deg);
+    left: -7px;
+    bottom: -12px;
+    border-color: #fff transparent transparent;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    border-width: 9px 3px 0;
+    border-style: solid;
+    transform: rotate(40deg);
+    left: -2px;
+    bottom: -6px;
+    border-color: #c6d2e0 transparent transparent;
+  }
 }
-
 
 /*
  * 对话框的三角形
  */
 .sanjiao {
-	position: absolute;
-	border-color: transparent;
-	border-style: solid;
-	border-top:solid .22rem #fff;
-	border-left-width: .1rem;
-	border-right-width: .1rem;
-	&::before {
-		content: '';
-		position: absolute;
-		bottom: .02rem;
-		left: -.052rem;
-		border-color: transparent;
-		border-style: solid;
-		border-top:solid .16rem #c6d2e0;
-		border-left-width: .06rem;
-		border-right-width: .06rem;
-	}
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  border-top: solid .22rem #fff;
+  border-left-width: .1rem;
+  border-right-width: .1rem;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: .02rem;
+    left: -.052rem;
+    border-color: transparent;
+    border-style: solid;
+    border-top: solid .16rem #c6d2e0;
+    border-left-width: .06rem;
+    border-right-width: .06rem;
+  }
 }
 
 /*
  * 表单控件
  */
 .form-control {
-	width: 100%;
-	font-size: 0;
-	line-height: 1;
-}
-input {
-	outline: none;
-	border: none;
-}
-input[type="radio"] {
-	-webkit-appearance: none;
-	appearance: none;
-	width: .2rem;
-	height: .2rem;
-	border: .02rem solid #75412c;
-	background: none;
-	outline: none;
-	cursor: pointer;
-	border-radius: 3px;
-	position: relative;
-	font-size: 0;
-}
-input[type="radio"]:checked::after {
-	content: '';
-	position: absolute;
-	background-color: #fff;
-	width: .1rem;
-	height: .1rem;
-	border-radius: 50%;
-	left: .03rem;
-	top: .032rem;
+  width: 100%;
+  font-size: 0;
+  line-height: 1;
 }
 
+input {
+  outline: none;
+  border: none;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: .2rem;
+  height: .2rem;
+  border: .02rem solid #75412c;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  font-size: 0;
+}
+
+input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: .1rem;
+  height: .1rem;
+  border-radius: 50%;
+  left: .03rem;
+  top: .032rem;
+}
+
+/*
+*渐变字体
+*/
+
+.linear-font {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FFFF00), color-stop(100%, #AC1C01));
+  -webkit-background-clip: text; /*只有webkit内核支持text的剪切模式*/
+  color: transparent;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+a, p, div {
+  -webkit-user-select: none;
+  user-select: none;
+}
 
 /*
  * 勾和叉
  * 错题查看使用
  */
 i {
-	&.gou {
-		display: inline-block;
-		width: .29rem;
-		height: .24rem;
-		background: url('../../img/gou.png') no-repeat;
-		background-size: cover;
-		line-height: 1;
-		font-size: 0;
-	}
-	&.cha {
-		display: inline-block;
-		width: .29rem;
-		height: .29rem;
-		background: url('../../img/cha.png') no-repeat;
-		background-size: cover;
-		line-height: 1;
-		font-size: 0;
-	}
+  &.gou {
+    display: inline-block;
+    width: .29rem;
+    height: .24rem;
+    background: url('../../img/gou.png') no-repeat;
+    background-size: cover;
+    line-height: 1;
+    font-size: 0;
+  }
+  &.cha {
+    display: inline-block;
+    width: .29rem;
+    height: .29rem;
+    background: url('../../img/cha.png') no-repeat;
+    background-size: cover;
+    line-height: 1;
+    font-size: 0;
+  }
 }
 
 /*
  * 触发BFC
  */
 .BFC {
-	overflow: hidden;
+  overflow: hidden;
 }
