@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易云课堂</title>
+	<link rel="stylesheet" href="../dist/css/yun.css">
+</head>
+<body>
+	<nav class="activity">
+		<div class="detail">学习节<i class="circ"></i>嗨够返场<span>限时优惠</span></div>
+		<ul class="list">
+			<li><a href="#"><span>嗨翻</span>职场</a></li>
+			<li><a href="#"><span>闯荡</span>IT互联网</a></li>
+			<li><a href="#"><span>撩遍</span>全球语</a></li>
+			<li><a href="#"><span>雄起</span>人生大考</a></li>
+			<li><a href="#"><span>私藏</span>才艺兴趣</a></li>
+		</ul>
+	</nav>
+	<section class="main">
+		<nav class="nav-top">
+			<img src="img/yun-logo.png" alt="网易云课堂">
+			<div class="login">
+				支持网易邮箱、QQ、微信、微博号
+				<a href="#">登录/注册</a>
+			</div>
+		</nav>
+		<main>
+			<div class="top">
+				<aside>
+					<h2><div class="more"></div>全部课程</h2>
+				</aside>
+				<ul class="list">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">课程体系</a>
+						<div class="two"></div>
+					</li>
+					<li><a href="#">微专业</a></li>
+					<li><a href="#">下载APP</a>
+						<div class="two"></div>
+					</li>
+					<li><a href="#">我的学习</a></li>
+				</ul>
+				<div class="search">
+					<div class="ui"></div>
+					<input type="text" placeholder="搜索">
+				</div>
+			</div>
+			<div class="main"></div>
+		</main>
+	</section>
+	<script src="../js/jquery-3.0.0.min.js"></script>
+	<script>
+		$('main').find('.list a').hover(function () {
+			$(this).next().css({
+				display: 'block'
+			}, 1000);
+		}, function () {
+			$(this).next().css({
+				display: 'none'
+			});
+		});
+	</script>
+</body>
+</html>
