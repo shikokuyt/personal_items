@@ -31,12 +31,28 @@
 				</aside>
 				<ul class="list">
 					<li><a href="#">首页</a></li>
-					<li><a href="#">课程体系</a>
-						<div class="two"></div>
+					<li><a href="#" class="one">课程体系</a>
+						<div class="two">
+							<a href="#">大学计算机专业</a>
+							<a href="#">互联网职业技能</a>
+							<a href="#">金融专业</a>
+						</div>
 					</li>
 					<li><a href="#">微专业</a></li>
-					<li><a href="#">下载APP</a>
-						<div class="two"></div>
+					<li><a href="#" class="one">下载APP</a>
+						<div class="two download">
+							<div>
+								<img src="img/nav_qrcode.png" alt="二维码">
+							</div>
+							<div class="down-img">
+								<p>
+									扫码下载官方App
+								</p>
+								<a href="#" class="ios"></a>
+								<a href="#" class="andriod"></a>
+							</div>
+							<div style="clear: both;"></div>
+						</div>
 					</li>
 					<li><a href="#">我的学习</a></li>
 				</ul>
@@ -45,20 +61,71 @@
 					<input type="text" placeholder="搜索">
 				</div>
 			</div>
-			<div class="main"></div>
+			<div class="main">
+				<a href="#" class="prev">&lt;</a>
+				<a href="#" class="next">&gt;</a>
+				<ul class="banner">
+					<li class="b1 active"><a href="#"></a></li>
+					<li class="b2"><a href="#"></a></li>
+					<li class="b3"><a href="#"></a></li>
+					<li class="b4"><a href="#"></a></li>
+				</ul>
+				<ul class="pagination">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 		</main>
 	</section>
+	<section class="source"></section>
+	<footer></footer>
 	<script src="../js/jquery-3.0.0.min.js"></script>
 	<script>
-		$('main').find('.list a').hover(function () {
-			$(this).next().css({
-				display: 'block'
-			}, 1000);
-		}, function () {
-			$(this).next().css({
-				display: 'none'
+		// Banner
+		(function ($) {
+			var timer = null,
+				childIndex = 0,
+				banner = $('.banner').children('li'),
+				pagi = $('.pagination').children('li');
+			timer = setInterval(timeStart, 3000);
+
+			// 绑定事件
+			pagi.each(function (i) {		
+				$(this).click(function () {
+					clearInterval(timer);
+					childIndex = i;
+					change();
+					timer = setInterval(timeStart, 3000)
+				})
 			});
-		});
+
+			function timeStart() {
+				childIndex ++;
+				if (childIndex === 4) {
+					childIndex = 0;
+				}
+				change();
+			}
+			function change() {
+				banner.each(function () {
+					$(this).removeClass('active');
+				});
+				pagi.each(function () {
+					$(this).removeClass('active')
+						.height('8px')
+				})
+				$(banner[childIndex]).addClass('active');
+				
+				$(pagi[childIndex]).stop(1000).addClass('active').css({
+					'height': '8px'
+				}).animate({
+					'background-color': '#fff',
+					'height': '15px'
+				}, 600);
+			}
+		})(jQuery);
 	</script>
 </body>
 </html>
