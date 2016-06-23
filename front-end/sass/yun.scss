@@ -5,7 +5,7 @@
 }
 body {
 	background-color: #fff;
-	font-family: '微软雅黑'; 
+	// font-family: ; 
 }
 body::-webkit-scrollbar-thumb {
 	border-radius: 15px;
@@ -342,6 +342,17 @@ section.main {
 		.main {
 			position: relative;
 			height: 440px;
+			.prev, .next {
+				position: absolute;
+				font-size: 35px;
+				top: 50%;
+			}
+			.prev {
+				left: 295px;
+			}
+			.next {
+				right: 380px;
+			}
 			.banner {
 				position: absolute;
 				left: 0;
