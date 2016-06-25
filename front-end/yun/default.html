@@ -310,7 +310,78 @@
 				</div>
 			</div>
 		</section>
-		<footer></footer>
+		<footer>
+			<div class="f-sm">
+				<img src="img/microicon.png" alt="微专业">
+				<p>一种专业有效的职业培训方案</p>
+			</div>
+			<div class="items">
+				<a href="#?12" class="i-prev">&lt;</a>
+				<a href="#" class="i-next">&gt;</a>
+				<div class="item-a">
+					<a href="#">
+						<div class="f-icon icon-e915 icons"></div>
+						<div class="item-t">数据挖掘工程师</div>
+						<div class="item-b">用R语言玩转信用风险建模</div>
+					</a>
+					<a href="#">
+						<div class="f-icon icon-e916 icons"></div>
+						<div class="item-t">VR游戏设计师</div>
+						<div class="item-b">创造自己的虚拟现实世界</div>
+					</a>
+					<a href="#">
+						<div class="f-icon icon-e62c icons"></div>
+						<div class="item-t">C++开发工程师</div>
+						<div class="item-b">宇涛大师亲自教学</div>
+					</a>
+					<a href="#">
+						<div class="f-icon icon-e635 icons"></div>
+						<div class="item-t">测试工程师</div>
+						<div class="item-b">打造最专业的测试人</div>
+					</a>
+					<a href="#">
+						<div class="f-icon icon-e61a icons"></div>
+						<div class="item-t">自由职业摄影师</div>
+						<div class="item-b">培养一个能赚钱的爱好</div>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="products global-grow">
+		<div class="p-free">
+			<a href="#">
+				<img src="img/mfhk.png" alt="免费好课">
+			</a>
+			<a class="scale">
+				<div class="pic lscy">
+					<img src="img/df.jpg" alt="10分钟学会使用单反">
+				</div>
+				<p class="title">10分钟学会使用单反</p>
+				<span class="author">周宇涛</span>
+			</a>
+			<a class="scale">
+				<div class="pic dj">
+					<img src="img/h5.jpg" alt="解锁H5操作全技能">
+				</div>
+				<p class="title">解锁H5操作全技能</p>
+				<span class="author">周宇涛</span>
+			</a>
+			<a class="scale">
+				<div class="pic">
+					<img src="img/ppt.jpg" alt="高大上的PPT设计秘笈">
+				</div>
+				<p class="title">高大上的PPT设计秘笈</p>
+				<span class="author">周宇涛</span>
+			</a>
+			<a class="scale">
+				<div class="pic">
+					<img src="img/vh.jpg" alt="3天入门水彩插画">
+				</div>
+				<p class="title">3天入门水彩插画</p>
+				<span class="author">周宇涛</span>
+			</a>
+		</div>
 	</div>
 	<div class="footer"></div>
 	<script src="../js/jquery-3.0.0.min.js"></script>
@@ -403,7 +474,41 @@
 				$(this)[0].lastElementChild.style.display = 'flex';
 			}).delegate('.title', 'mouseout', function(event) {
 				$(this)[0].lastElementChild.style.display = 'none';
-			});;
+			});
+
+			// micro
+			var slide = $('.item-a'),
+				i_prev = $('.i-prev'),
+				i_next = $('.i-next');
+				slide.attr('index', 0),
+				off_left = 0;
+			i_prev.on('click', function (e) {
+				e.preventDefault();
+				var index = +slide.attr('index');
+				if (index === 0) {
+					return;
+				}
+				index --;
+				off_left = -index*250+'px';
+				slide.animate({
+					left: off_left},
+					500);
+				slide.attr('index', index);
+
+			})
+			i_next.on('click', function (e) {
+				e.preventDefault();
+				var index = +slide.attr('index');
+				if (index === 2) {
+					return;
+				}
+				index ++;
+				off_left = -index*250+'px';
+				slide.animate({
+					left: off_left},
+					500);
+				slide.attr('index', index);
+			})
 		}(jQuery));
 	</script>
 </body>
