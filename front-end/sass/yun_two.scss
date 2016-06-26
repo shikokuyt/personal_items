@@ -320,19 +320,19 @@ img {
 				position: absolute;
 				top: 0;
 				transform-origin: 100% 0%;
-				border-bottom: 400px solid transparent;
-				border-left: 12px solid transparent;
-				border-right: 12px solid transparent;
+				border-bottom: 72px solid transparent;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
 			}
 			.left {
 				width: 440px;
 				transform: rotateZ(90deg);
-				top: 452px;
-				left: -464px;
+				top: 444px;
+				left: -448px;
 			}
 			.right {
 				width: 440px;
-				top: -12px;
+				top: -4px;
 				right: 0;
 				transform: rotateZ(-90deg);
 			}
@@ -626,10 +626,47 @@ img {
 			transform: scale(1.2);
 		}
 	}
+	.pic {
+		overflow: hidden;
+		position: relative;
+	}
+	img {
+		transition: all ease 1.5s;
+	}
+	.lscy:after {
+		content: '老师参与';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		color: #fff;
+		background-color: rgba(0, 0, 0, .5);
+		font-size: 12px;
+		padding: 2px 3px;
+	}
+	.dj:before {
+		content: '';
+		width: 51px;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		height: 51px;
+		position: absolute;
+		background: url("../../yun/img/courseMark_sprite.png") no-repeat;
+		background-size: 180px 261px;
+		background-position: -65px -81px;
+	}
+	.title {
+		font-size: 14px;
+	}
+	.author {
+		font-size: 12px;
+		color: #999;
+	}
 	.p-free {
 		overflow: hidden;
 		width: 100%;
 		margin-top: 55px;
+		margin-bottom: 55px;
 		height: 190px;
 		display: flex;
 		a {
@@ -641,51 +678,283 @@ img {
 			margin-left: 20px;
 			width: 225px;
 			height: 190px;
-			.title {
-				font-size: 14px;
-			}
-			.author {
-				font-size: 12px;
-				color: #999;
-			}
+			
 			.pic {
 				height: 142px;
-				overflow: hidden;
-				position: relative;
 			}
-			.lscy:after {
-				content: '老师参与';
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				color: #fff;
-				background-color: rgba(0, 0, 0, .5);
-				font-size: 12px;
-				padding: 2px 3px;
-			}
-			.dj:before {
-				content: '';
-				width: 51px;
-				top: 0;
-				left: 0;
-				z-index: 20;
-				height: 51px;
-				position: absolute;
-				background: url("../../yun/img/courseMark_sprite.png") no-repeat;
-				background-size: 180px 261px;
-				background-position: -65px -81px;
-			}
+			
 			img {
-				transition: all ease 1.5s;
 				width: 225px;
 			}
 		}
 		
 	}
+	.ithlw {
+		.it-top {
+			height: 50px;
+			.title {
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 50px;
+				float: left;
+			}
+			.nav {
+				float: right;
+				line-height: 50px;
+				font-size: 0px;
+				a {
+					font-size: 14px;
+					color: gray;
+					display: block;
+					float: left;
+					padding-right: 14px;
+					&:hover {
+						color: #31A030;
+					}
+				}
+				.more {
+					position: relative;
+					padding-right: 16px;
+				}
+				.more:after {
+					content: '';
+					position: absolute;
+					width: 14px;
+					height: 15px;
+					right: 0;
+					@include vertical-center;
+					background: url("../../yun/img/ui_sprite_1.png") no-repeat;
+					background-size: 90px 2000px;
+					background-position: 0 -1677px;
+				}
+			}
+		}
+		.itad {
+			float: right;
+			width: 225px;
+			background-color: #4ABC92;
+			height: 389px;
+			.ad-list {
+				height: 141px;
+				box-sizing: border-box;
+				padding-top: 20px;
+				padding-left: 15px;
+				a {
+					display: block;
+					font-size: 14px;
+					line-height: 1.9;
+					color: #fff;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			.scale {
+				.pic {
+					height: 248px;
+				}
+				display: block;
+				height: 248px
+			}
+		}
+		.itcourse {
+			margin-right: 224px;
+			height: 389px;
+			overflow: hidden;
+			.scale {
+				float: left;
+				.pic {
+					height: 142px;
+				}
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+			.big {
+				width: 470px;
+				height: 184px;
+				.pic {
+					height: 184px;
+				}
+			}
+			.title, .author {
+				line-height: 21px;
+			}
+		}
+	}
 }
 
 .footer {
-	height: 200px;
+	margin-top: 80px;
+	background-color: #F8F8F8;
+	line-height: 160px;
+	color: #666;
+	font-size: 35px;
+	text-align: center;
+}
+
+.fixed {
+	#cha {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-style: normal;
+		padding: 5px;
+		padding-top: 0;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.f-r {
+		position: fixed;
+		right: 30px;
+		bottom: 110px;
+		z-index: 2000;
+		background-color: #FFF;
+		border: 1px solid #ddd;
+		padding: 5px 10px;
+		cursor: pointer;
+		border-radius: 5px;
+		.fk, .app, .to-top {
+			display: block;
+			width: 30px;
+			height: 30px;
+			border-bottom: 1px solid #ddd;
+			padding: 15px 8px;
+			position: relative;
+			// overflow: hidden;
+			.img {
+				position: absolute;
+				@include center;
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: url("../../yun/img/side.png") no-repeat;
+				background-size: 161px 155px;
+			}
+			.f-m {
+				position: absolute;
+			}
+			&:nth-child(1) {
+				.img {
+					background-position: 0 0;
+				}
+				.f-m {
+					width: 200px;
+					background-color: rgba(23, 234, 23, .5);
+					right: 57px;
+					top: -6px;
+					.t {
+						display: block;
+						img {
+							display: block;
+							width: 20px !important;
+							height: 20px;
+						}
+					}
+					img {
+						width: 50px;
+						height: 50px;
+					}
+				}
+			}
+			&:nth-child(2) {
+				.img {
+					background-position: 0 -57px;
+					width: 22px;
+				}
+			}
+			&:last-child {
+				border-bottom: none;
+				.img {
+					background-position: 0 -112px;
+				}
+			}
+		}
+	}
+	.f-b {
+		z-index: 20000;
+		height: 100px;
+		background-color: rgba(0, 0, 0, .6);
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		color: #fff;
+		h2 {
+			font-weight: normal;
+			font-size: 23px;
+			margin-left: 80px;
+			margin-top: 15px;
+		}
+		.logo {
+			margin-left: 80px;
+			margin-top: 10px;
+			a {
+				float: left;
+				display: block;
+				margin-right: 10px;
+				height: 24px;
+				font-size: 13px;
+				line-height: 24px;
+				color: #fff;
+			}
+			.lg {
+				background: url("../../yun/img/snsSprite.png") no-repeat;
+				background-size: 320px 350px;
+				width: 89px;
+			}
+			.sina {
+				background-position: -10px -13px;
+				&:hover {
+					background-position: -10px -53px;
+				}
+			}
+			.qq {
+				background-position: -112px -13px;
+				&:hover {
+					background-position: -112px -53px;
+				}
+			}
+			.rr {
+				background-position: -214px -13px;
+				&:hover {
+					background-position: -214px -53px;
+				}
+			}
+			.email {
+				background-position: -10px -316px;
+				&:hover {
+					background-position: -115px -316px;
+				}
+			}
+			.logins, .regis {
+				border-radius: 5px;
+				padding: 0 6px;
+			}
+			.logins {
+				margin-left: 10px;
+				background-color: #39A030;
+				&:hover {
+					background-color: #9c6;
+				}
+			}
+			.regis {
+				background-color: #FF9600;
+				&:hover {
+					background-color: #fc3;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1367px) {
+	.banner {
+		.left, .right {
+			border-bottom: 400px solid transparent;
+			border-left: 12px solid transparent;
+			border-right: 12px solid transparent;
+		}
+	}
 }
 
 @media screen and (max-width: 960px) {

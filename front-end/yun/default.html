@@ -382,8 +382,129 @@
 				<span class="author">周宇涛</span>
 			</a>
 		</div>
+		<div class="ithlw">
+			<div class="it-top">
+				<h3 class="title">
+					IT互联网
+				</h3>
+				<div class="nav">
+					<a href="#">Web开发</a>
+					<a href="#">网络营销</a>
+					<a href="#">产品经理</a>
+					<a href="#">编程语言</a>
+					<a href="#" class="more">更多</a>
+				</div>
+			</div>
+			<div class="itad">
+				<div class="ad-list">
+					<a href="#">月薪过万的设计师养成记</a>
+					<a href="#">8小时学会HTML网页开发</a>
+					<a href="#">"自媒体"赚钱的N种方式</a>
+					<a href="#">一天玩转MySQL</a>
+				</div>
+				<a href="#" class="scale">
+					<div class="pic">
+						<img src="img/it8.png" alt="微信营销全攻略">
+					</div>
+				</a>
+			</div>
+			<div class="itcourse">
+				<div class="scale big">
+					<div class="pic">
+						<img src="img/it1.png" alt="工作必备">
+					</div>
+				</div>
+				<div class="scale">
+					<div class="pic">
+						<img src="img/it2.jpg" alt="3天入门水彩插画">
+					</div>
+					<p class="title">UI设计从入门到精通</p>
+					<span class="author">周宇涛</span>
+				</div>
+				<div class="scale ">
+					<div class="pic lscy">
+						<img src="img/it3.jpg" alt="3天入门水彩插画">
+					</div>
+					<p class="title">如何写出10w+的新媒体文案</p>
+					<span class="author">周宇涛</span>
+				</div>
+				<div class="scale">
+					<div class="pic">
+						<img src="img/it4.jpg" alt="3天入门水彩插画">
+					</div>
+					<p class="title">那些必备的手机app</p>
+					<span class="author">周宇涛</span>
+				</div>
+				<div class="scale">
+					<div class="pic">
+						<img src="img/it5.jpg" alt="3天入门水彩插画">
+					</div>
+					<p class="title">产品经理入门秘笈</p>
+					<span class="author">周宇涛</span>
+				</div>
+				<div class="scale">
+					<div class="pic">
+						<img src="img/it6.jpg" alt="3天入门水彩插画">
+					</div>
+					<p class="title">3天入门水彩插画</p>
+					<span class="author">周宇涛</span>
+				</div>
+				<div class="scale">
+					<div class="pic dj">
+						<img src="img/it7.jpg" alt="3天入门水彩插画">
+					</div>
+					<p class="title">JavaScript深入浅出</p>
+					<span class="author">周宇涛</span>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="footer"></div>
+	<div class="footer">
+			网易云课堂Footer
+	</div>
+
+	<div class="fixed">
+		<div class="f-r">
+			<a class="fk">
+				<span class="img"></span>
+				<div class="f-m">
+					<div class="c">
+						在线联系客服: 
+					</div>
+					<!--<a href="#" class="t">
+						<span class="last"></span>
+					</a>-->
+					<!--<div class="contact">
+						<p>在线联系客服: </p>
+						<a href="#">
+							<img src="img/last.png" alt="联系客服">
+							云课堂在线客服
+						</a>
+					</div>-->
+					<div class="liuy"></div>
+				</div>
+			</a>
+			<a class="app">
+				<span class="img"></span>
+				<div class="f-m"></div>
+			</a>
+			<a class="to-top">
+				<span class="img"></span>
+			</a>
+		</div>
+		<div class="f-b">
+			<i id="cha">x</i>
+			<h2>和千万用户一起成长！</h2>
+			<div class="logo">
+				<a href="#" class="lg sina"></a>
+				<a href="#" class="lg qq"></a>
+				<a href="#" class="lg rr"></a>
+				<a href="#" class="lg email"></a>
+				<a href="#" class="logins">登录</a>
+				<a href="#" class="regis">注册</a>
+			</div>
+		</div>
+	</div>
 	<script src="../js/jquery-3.0.0.min.js"></script>
 	<script>
 		(function ($) {
@@ -440,7 +561,8 @@
 				})
 			})
 			// 前一个banner
-			prev.on('click', function () {
+			prev.on('click', function (e) {
+				e.preventDefault();
 				clearInterval(timer);
 				index --;
 				if (index < 0) {
@@ -451,7 +573,8 @@
 				timer = setInterval(change, 3000);
 			})
 			// 后一个banner
-			next.on('click', function () {
+			next.on('click', function (e) {
+				e.preventDefault();
 				clearInterval(timer);
 				index ++;
 				if (index == banner_li.length) {
@@ -508,6 +631,13 @@
 					left: off_left},
 					500);
 				slide.attr('index', index);
+			})
+		}(jQuery));
+
+		(function ($){
+			var cha = $('#cha');
+			cha.on('click', function () {
+				$(this).parent().fadeOut('slow');
 			})
 		}(jQuery));
 	</script>
