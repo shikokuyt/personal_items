@@ -41,6 +41,125 @@ img {
 	transform: translateX(-50%);
 }
 
+.hide-top {
+	position: fixed;
+	display: none;
+	left: 0;
+	top: -200px;
+	width: 100%;
+	height: 60px;
+	z-index: 2000;
+	background-color: #2E323E;
+	box-shadow: 0 0 2px gray;
+	.global-grow {
+		position: relative;
+		height: 60px;
+		overflow: hidden;
+		*zoom: 1;
+	}
+	nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding-left: 265px;
+		box-sizing: border-box;
+		line-height: 60px;
+		height: 60px;
+		width: 100%;
+		font-size: 0;
+		a:not(.login-reg) {
+			font-size: 16px;
+			display: inline-block;
+			height: 60px;
+			line-height: 60px;
+			padding: 0 15px;
+			color: #fff;
+			&:hover {
+				background-color: rgba(255, 255, 255, .2);
+			}
+		}
+		.search {
+			position: absolute;
+			@include vertical-center;
+			width: 250px;
+			right: 0;
+			i {
+				position: absolute;
+				width: 13px;
+				height: 18px;
+				background: url("../../yun/img/ui_sprite.png") no-repeat;
+				background-size: 200px 200px;
+				background-position: 0 -130px;
+				@include vertical-center;
+				left: 5px;
+				z-index: 5;
+			}
+			input {
+				z-index: 200;
+				left: 0;
+				right: 0;
+				width: 160px;
+				height: 26px;
+				box-sizing: border-box;
+				@include vertical-center;
+				padding-left: 20px;
+				position: absolute;
+				line-height: 26px;
+				background: #5C5F68;
+				outline: none;
+				border: none;
+				&:focus {
+					background: #fff;
+				}
+			}
+		}
+		.login-reg {
+			display: inline-block;
+			float: right;
+			font-size: 14px;
+			background-color: #FF9600;
+			line-height: 1;
+			color: #fff;
+			padding: 8px 6px;
+			&:hover {
+				background-color: gold;
+			}
+		}
+	}
+	a.wy {
+		cursor: pointer;
+		display: block;
+		margin-top: 16px;
+		width: 173px;
+		height: 28px;
+		background: url("../../yun/img/logo3.png") no-repeat;
+		background-size: 153px 28px;
+		background-position: left top;
+		position: relative;
+		z-index: 1;
+	}
+	a.more {
+		position: absolute;
+		z-index: 1;
+		left: 165px;
+		top: 16px;
+		padding: 5px;
+		border-radius: 3px;
+		i {
+			display: inline-block;
+			width: 18px;
+			height: 14px;
+			background: url(../../yun/img/ui_sprite.png) no-repeat;
+			background-size: 200px 200px;
+		}
+		&:hover {
+			background-color: rgba(255, 255, 255, .2);
+		}
+	}
+
+}
+
 .top {
 	height: 100px;
 	position: relative;
@@ -625,6 +744,9 @@ img {
 			transform-origin: 50% 50%;
 			transform: scale(1.2);
 		}
+		.title {
+			color: #31A030;
+		}
 	}
 	.pic {
 		overflow: hidden;
@@ -690,6 +812,7 @@ img {
 		
 	}
 	.ithlw {
+		cursor: pointer;
 		.it-top {
 			height: 50px;
 			.title {
@@ -808,66 +931,44 @@ img {
 		right: 30px;
 		bottom: 110px;
 		z-index: 2000;
+		width: 59px;
+		height: 59px;
 		background-color: #FFF;
 		border: 1px solid #ddd;
-		padding: 5px 10px;
 		cursor: pointer;
 		border-radius: 5px;
-		.fk, .app, .to-top {
+		// display: flex;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			.to-hide {
+				display: block;
+			}
+		}
+		.to-hide {
+			transition: all ease 1s;
+			display: none;
+			font-size: 15px;
+			color: #fff;
+			width: 100%;
+			left: 0;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 5px 8px;
+			padding-top: 7px;
+			text-align: center;
+			position: absolute;
+			height: 100%;
+			background-color: #31A030;
+		}
+		.to-top {
 			display: block;
 			width: 30px;
 			height: 30px;
-			border-bottom: 1px solid #ddd;
-			padding: 15px 8px;
-			position: relative;
-			// overflow: hidden;
-			.img {
-				position: absolute;
-				@include center;
-				display: block;
-				width: 30px;
-				height: 30px;
-				background: url("../../yun/img/side.png") no-repeat;
-				background-size: 161px 155px;
-			}
-			.f-m {
-				position: absolute;
-			}
-			&:nth-child(1) {
-				.img {
-					background-position: 0 0;
-				}
-				.f-m {
-					width: 200px;
-					background-color: rgba(23, 234, 23, .5);
-					right: 57px;
-					top: -6px;
-					.t {
-						display: block;
-						img {
-							display: block;
-							width: 20px !important;
-							height: 20px;
-						}
-					}
-					img {
-						width: 50px;
-						height: 50px;
-					}
-				}
-			}
-			&:nth-child(2) {
-				.img {
-					background-position: 0 -57px;
-					width: 22px;
-				}
-			}
-			&:last-child {
-				border-bottom: none;
-				.img {
-					background-position: 0 -112px;
-				}
-			}
+			background: url("../../yun/img/side.png") no-repeat;
+			background-size: 161px 155px;
+			background-position: 0 -112px;			
 		}
 	}
 	.f-b {

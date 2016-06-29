@@ -7,6 +7,27 @@
 	<link rel="stylesheet" href="../dist/css/yun_two.css">
 </head>
 <body>
+	<div class="hide-top">
+		<div class="global-grow">
+		<a class="wy">
+		</a>
+		<a href="#" class="more">
+			<i></i>
+		</a>
+		<nav>
+			<a href="#">首页</a>
+			<a href="#">课程体系</a>
+			<a href="#">微专业</a>
+			<a href="#">下载APP</a>
+			<a href="#">我的学习</a>
+			<div class="search">
+				<i></i>
+				<input type="text" placeholder="搜索">
+				<a href="#" class="login-reg">登录/注册</a>
+			</div>
+		</nav>
+		</div>
+	</div>
 	<div class="top global-grow">
 		<img src="img/yun-logo.png" alt="网易云课堂" class="top-logo">
 		<div class="login">
@@ -465,31 +486,10 @@
 
 	<div class="fixed">
 		<div class="f-r">
-			<a class="fk">
-				<span class="img"></span>
-				<div class="f-m">
-					<div class="c">
-						在线联系客服: 
-					</div>
-					<!--<a href="#" class="t">
-						<span class="last"></span>
-					</a>-->
-					<!--<div class="contact">
-						<p>在线联系客服: </p>
-						<a href="#">
-							<img src="img/last.png" alt="联系客服">
-							云课堂在线客服
-						</a>
-					</div>-->
-					<div class="liuy"></div>
-				</div>
+			<a href="#" class="to-hide">
+				返回顶部
 			</a>
-			<a class="app">
-				<span class="img"></span>
-				<div class="f-m"></div>
-			</a>
-			<a class="to-top">
-				<span class="img"></span>
+			<a href="#" class="to-top">
 			</a>
 		</div>
 		<div class="f-b">
@@ -639,7 +639,47 @@
 			cha.on('click', function () {
 				$(this).parent().fadeOut('slow');
 			})
+
+
+			$(window).scroll(function (e) {
+				$(window).scrollTop(throttle(scrolls, 500));
+			});
+			function scrolls() {
+				var top = $(this).scrollTop();
+				if (top >= 100) {
+					$('.hide-top')
+						.css('display', 'block')
+						.stop(1000)
+						.animate({
+							'top': '0'
+						}, 1500);
+					$('.f-r').css('display', 'flex');
+				} else {
+					$('.hide-top')
+						.animate({
+							'top': '-200px'
+						}, 1500)
+						.stop(1000)
+						.css('display', 'none');
+					$('.f-r').css('display', 'none');
+				}
+			}
+			$('.f-r').on('click', function (e) {
+				e.preventDefault();
+				$('body, html').animate({scrollTop: 0}, 500);
+			})
 		}(jQuery));
+		
+		function throttle(method, delay) {
+			var timer = null;
+			return function () {
+				var context = this, args = arguments;
+				clearTimeout(timer);
+				timer = setTimeout(function () {
+					method.apply(context, args);
+				}, delay);
+			};
+		}
 	</script>
 </body>
 </html>
